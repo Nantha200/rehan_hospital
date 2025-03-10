@@ -686,37 +686,3 @@ function sendToWhatsapp() {
 	let url = `https://wa.me/${number}?text=${encodeURIComponent(message)}`;
 	window.open(url, "_blank");
 }
-
-
-
-document.addEventListener("DOMContentLoaded", function () {
-    const galleryImages = document.querySelectorAll(".gallery-item"); // Targeting images
-    const popupOverlay = document.querySelector(".popup-overlay");
-    const popupImage = document.querySelector(".popup-image");
-    const closePopup = document.querySelector(".popup-close");
-
-    galleryImages.forEach(image => {
-        image.addEventListener("click", function () {
-            const imgSrc = this.getAttribute("src");
-            popupImage.setAttribute("src", imgSrc);
-            popupOverlay.classList.add("active-popup");
-        });
-    });
-
-    // Check if closePopup exists before adding an event listener
-    if (closePopup) {
-        closePopup.addEventListener("click", function () {
-            popupOverlay.classList.remove("active-popup");
-        });
-    }
-
-    // Close popup on outside click
-    popupOverlay.addEventListener("click", function (e) {
-        if (e.target === popupOverlay) {
-            popupOverlay.classList.remove("active-popup");
-        }
-    });
-
-    // Ensure popup resets on page refresh
-    popupOverlay.classList.remove("active-popup");
-});
