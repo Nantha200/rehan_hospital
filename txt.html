@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Facilities</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
+        body { background: #f8f9fa; text-align: center; }
+        .container { max-width: 1200px; margin: 50px auto; padding: 20px; }
+        h2 { margin-bottom: 20px; font-size: 28px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .facility { background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); opacity: 0; transform: translateY(20px); transition: all 0.5s ease-in-out; }
+        .facility i { font-size: 40px; color: #007bff; margin-bottom: 10px; }
+        .facility h3 { font-size: 18px; margin-bottom: 10px; }
+        .facility p { font-size: 14px; color: #555; }
+        @media (max-width: 768px) { .grid { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Our Lab Facilities</h2>
+        <div class="grid" id="facilitiesGrid">
+            <div class="facility"><i class="fas fa-flask"></i><h3>Medical Laboratory</h3><p>Advanced diagnostics with precision.</p></div>
+            <div class="facility"><i class="fas fa-microscope"></i><h3>Histopathology</h3><p>Expert tissue analysis.</p></div>
+            <div class="facility"><i class="fas fa-heartbeat"></i><h3>Endocrinology</h3><p>Specialized diabetes care.</p></div>
+            <div class="facility"><i class="fas fa-x-ray"></i><h3>Digital X-ray</h3><p>High-resolution imaging.</p></div>
+            <div class="facility"><i class="fas fa-ribbon"></i><h3>Mammogram</h3><p>Early breast cancer detection.</p></div>
+            <div class="facility"><i class="fas fa-wave-square"></i><h3>3D Sonography</h3><p>Detailed ultrasound diagnostics.</p></div>
+            <div class="facility"><i class="fas fa-procedures"></i><h3>ECG/TMT</h3><p>Comprehensive heart checkups.</p></div>
+            <div class="facility"><i class="fas fa-clinic-medical"></i><h3>Cardiac CT Scan</h3><p>Advanced heart imaging.</p></div>
+            <div class="facility"><i class="fas fa-magnet"></i><h3>MRI Scan</h3><p>High-definition internal imaging.</p></div>
+        </div>
+    </div>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const facilities = document.querySelectorAll(".facility");
+            function showFacilities() {
+                facilities.forEach((facility, index) => {
+                    setTimeout(() => {
+                        facility.style.opacity = "1";
+                        facility.style.transform = "translateY(0)";
+                    }, index * 200);
+                });
+            }
+            showFacilities();
+        });
+    </script>
+</body>
+</html>
