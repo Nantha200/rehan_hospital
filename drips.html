@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from ary-themes.com/html/meditab/service-detail.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 17 Feb 2025 12:14:35 GMT -->
+<head>
+<meta charset="utf-8">
+<title>Meditab | Medical HTML Template | Service Detail</title>
+<!-- Stylesheets -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/responsive.css" rel="stylesheet">
+<!--Color Switcher Mockup-->
+<link href="css/color-switcher-design.css" rel="stylesheet">
+
+<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+<link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+<!-- Responsive -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+<style>
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+
+}
+
+.drips {
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #007bff; /* Blue border for highlight */
+    gap: 20px;
+}
+
+.gallery-item {
+    flex: 0 0 200px; /* Fixed width for image */
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 30%;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+.dripsdrop {
+    flex: 1; /* Takes remaining space */
+}
+
+.dripsdrop h4 {
+    font-size: 30px;
+    color: #007bff; /* Blue heading */
+    margin-bottom: 10px;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.dripsdrop p {
+    font-size: 16px;
+    color: #333; /* Dark text */
+    line-height: 1.6;
+    margin-bottom: 12px;
+    font-weight: 200px;
+}
+
+p {
+    text-align: justify;
+
+    word-spacing: -1px;
+    font-family: sans-serif;
+}
+
+@media (max-width: 600px) {
+    .gallery-item img {
+    width: 50%;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+}
+@media (max-width: 375px) {
+    .gallery-item img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+}
+
+
+
+.benefits-list {
+    background: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 15px;
+    border-left: 5px solid #007bff; /* Green left border */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.benefits-list h4 {
+    font-size: 28px;
+    color: #007bff; /* Green heading */
+    margin-bottom: 10px;
+}
+
+.benefits-list p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.benefits-list p::before {
+    content: "✔ ";
+    font-weight: bold;
+    color: #007bff; /* Green check icon */
+}
+
+
+
+
+.drip-container {
+    display: flex;
+    align-items: flex-start;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #007bff; /* Blue left border */
+    gap: 20px;
+}
+
+
+.drip-content {
+    flex: 1; /* Takes remaining space */
+}
+
+.drip-content h4 {
+    font-size: 20px;
+    color: #007bff; /* Blue heading */
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.drip-content p {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+/* Benefits List */
+.benefits-list {
+    background: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 15px;
+    border-left: 5px solid #007bff;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+
+.benefits-list h4 {
+    font-size: 18px;
+    color: #007bff;
+    margin-bottom: 8px;
+}
+
+.benefits-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.benefits-list ul li {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 25px;
+}
+
+.benefits-list ul li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #007bff;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    h4 {
+        font-size: 16px;
+        text-align: left; /* Or keep center */
+        margin-top: 20px;
+    }
+    .image-gallery p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-top: 20px;
+    }
+}
+
+h4 {  
+        margin-top: 20px;
+    }
+ p {
+        margin-top: 20px;
+    }
+
+    button {
+        width:auto;
+        }
+
+.drips h3{
+    font-size: 20px;
+}
+
+
+
+
+</style>
+
+</head>
+
+<body>
+
+<div class="page-wrapper">
+    <!-- Preloader -->
+    <div class="preloader"></div>
+    
+    <!-- Main Header-->
+    <header class="main-header header-style-four">
+        <!-- Top Header -->
+        <div class="header-top-two">
+            <div class="auto-container">
+                <div class="inner-container">
+                    <div class="top-left">
+                        <ul>
+                           <li><span class="icon fa fa-phone-volume"></span> (00) 000 111 222.</li> 
+                           <li><span class="icon fa fa-envelope"></span> info@somedomain.com</li> 
+                        </ul>
+                    </div>
+
+                    <div class="top-right">
+                        <div class="text"><span class="icon fa fa-map-marker-alt"></span> 121 King Street, Melbourne</div>
+                        <ul class="social-icon-three">
+                            <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+                            <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                            <li><a href="#"><span class="fab fa-dribbble"></span></a></li>
+                            <li><a href="#"><span class="fab fa-google"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Header Lower -->
+        <div class="header-lower">
+            <div class="auto-container">
+                <div class="inner-container">
+                    <div class="logo-outer">
+                        <div class="logo"><a href="index.html"><img src="images/logo.png" alt="" title=""></a></div>
+                    </div>
+
+                    <!--Nav Box-->
+                    <div class="nav-outer">
+                        <!--Mobile Navigation Toggler-->
+                        <div class="mobile-nav-toggler"><span class="icon flaticon-menu"></span></div>
+
+                                            <!-- Main Menu -->
+                    <nav class="main-menu navbar-expand-md navbar-light">
+                        <div class="collapse navbar-collapse clearfix" id="navbarSupportedContent">
+                            <ul class="navigation clearfix">
+                                <li><a href="index.html">Home</a></li>
+
+                                <li><a href="about.html">About Us</a></li>
+
+                               
+                                <li class="dropdown"><a href="services.html">Services</a>
+                                    <ul>
+                                        <li><a href="services.html">Hospital Services</a></li>
+                                        <li><a href="dripsdrop.html">DripDrop</a></li>
+                                        <li><a href="lab.html">Lab facilities</a></li>
+                                    </ul>
+                                </li>
+
+                                <li><a href="doctors.html">Doctors</a></li>
+                                <li><a href="gallery.html">Gallery</a></li>
+
+                                <li><a href="contact.html">Contacts</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <!-- Main Menu End-->
+                    <div class="outer-box">
+                                        
+                        <!-- Appointment Btn -->
+                        <div class="appointment-btn">
+                            <button id="openForm" class="system-only">
+                                <i class="fa fa-calendar-alt"></i> Appointment
+                            </button>
+                            <button id="openForm" class="mobile-only">
+                                <img src="images/appoinment symbol.png" alt="Appointment">
+                            </button>
+                        </div>
+                        <div class="mobile-nav-toggler"><span class="icon fa fa-bars"></span></div>
+
+
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Header Lower -->
+        <div id="popupForm" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Appointment</h2>
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" class="input" name="name" required>
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="phone">Mobile Number:</label>
+                        <input type="tel" id="phone" class="input" name="phone" pattern="[0-9]{10,15}" required>
+                    </div>
+                
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date">Select Date:</label>
+                            <input type="date" id="date" class="input" name="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Select Time:</label>
+                            <input type="time" id="time" name="time" class="input" required>
+                        </div>
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="treatment">Message:</label>
+                        <textarea name="treatment" id="treatment" class="input" required></textarea>
+                    </div>
+                
+                    <button type="button" class="btn" onclick="sendToWhatsapp()">Send</button>
+                </form>
+            </div>
+        </div>
+        <!-- Sticky Header  -->
+        <div class="sticky-header">
+            <div class="auto-container">
+                <div class="inner-container">
+                    <!--Logo-->
+                    <div class="logo">
+                        <a href="index.html" title=""><img src="images/logo.png" alt="" title=""></a>
+                    </div>
+                    <!--Right Col-->
+                    <div class="nav-outer">
+                        <!-- Main Menu -->
+                        <nav class="main-menu">
+                            <div class="navbar-collapse show collapse clearfix">
+                                 <ul class="navigation clearfix"><!--Keep This Empty / Menu will come through Javascript--></ul>
+                            </div>
+                        </nav><!-- Main Menu End-->
+                    </div>
+                </div>
+            </div>
+        </div><!-- End Sticky Menu -->
+
+
+        <!-- Mobile Menu  -->
+        <div class="mobile-menu">
+            <div class="menu-backdrop"></div>
+            <div class="close-btn"><span class="icon fa fa-times"></span></div>
+            
+            <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+            <nav class="menu-box">
+                <div class="nav-logo"><a href="index.html"><img src="images/logo.png" alt="" title=""></a></div>
+                
+                <ul class="navigation clearfix"><!--Keep This Empty / Menu will come through Javascript--></ul>
+            </nav>
+        </div><!-- End Mobile Menu -->
+
+        <!-- Header Search -->
+        <div class="search-popup">
+            <span class="search-back-drop"></span>
+            <button class="close-search"><span class="fa fa-times"></span></button>
+            <div class="search-inner">
+                <form method="post" action="https://ary-themes.com/html/meditab/blog-showcase.html">
+                    <div class="form-group">
+                        <input type="search" name="search-field" value="" placeholder="Search..." required="">
+                        <button type="submit"><i class="flaticon-magnifying-glass"></i></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- End Header Search -->
+    </header>
+    <!--End Main Header -->
+    
+    <!--Page Title-->
+    <section class="page-title" style="background-image: url(images/background/16.jpg);">
+        <div class="auto-container">
+            <h1>Service Detail</h1>
+            <ul class="page-breadcrumb">
+                <li><a href="index.html">Home</a></li>
+                <li>Service Detail</li>
+            </ul> 
+        </div>
+    </section>
+    <!--End Page Title-->
+
+
+    <!--Sidebar Page Container-->
+    <div class="sidebar-page-container">
+        <div class="auto-container">
+            <div class="row clearfix">
+
+              
+
+                <!--Sidebar Side-->
+                <div class="sidebar-side col-lg-4 col-md-12 col-sm-12">
+                    <aside class="sidebar services-sidebar">
+                        
+                        <!-- Category Widget -->
+                        <div class="sidebar">
+                            <aside class="sidebar services-sidebar">
+                                <ul class="services-categories">
+                                    <li class="active"><a href="dripsdrop.html">All Services</a></li>
+                                    <li><a href="drips.html?filter=cold_flu">Cold and Flu</a></li>
+                                    <li><a href="drips.html?filter=happy_tummy">Happy Tummy</a></li>
+                                    <li><a href="drips.html?filter=iv_hydra">IV Hydration</a></li>
+                                    <li><a href="drips.html?filter=immunity_boost">Immunity Boost</a></li>
+                                    <li><a href="drips.html?filter=sports_reboot">Sports Reboot</a></li>
+                                    <li><a href="drips.html?filter=fatty_burn">Fatty Burn</a></li>
+                                    <li><a href="drips.html?filter=headache">Headache</a></li>
+                                    <li><a href="drips.html?filter=detox_drip">Detox Drip</a></li>
+                                    <li><a href="drips.html?filter=jet_lag">Jet Lag</a></li>
+                                    <li><a href="drips.html?filter=beauty">Beauty DripDrops</a></li>
+                                    <li><a href="drips.html?filter=hangover">Hangover Cure DripDrop</a></li>
+                                    <li><a href="drips.html?filter=energy">Energy DripDrop</a></li>
+                                </ul>
+                            </aside>
+                            
+                        </div>
+                        
+
+                      
+                    </aside>
+                </div>
+                <div class="content-side col-lg-8 col-md-12 col-sm-12 order-2">
+
+                        <div class="image-gallery">
+                            <div class="drips" data-filter="cold_flu">
+                                <div class="gallery-item">
+                                    <a href="drips.html?filter=cold_flu">
+                                        <img src="images/gallery/DRIPS/cold_flu.png" alt="Cold & Flu Drip">
+                                        <h3>Feel better DripDrop</h3>
+                                    </a>
+                                </div>
+                                <div class="dripsdrop">
+                                    <h4>Feeling miserable and need a boost of your immune system?</h4>
+                                    <p>DripDrop Cold and flu IV therapy will get you back to being a functioning human and get your immune system pumping to get your illness in check! Experience at your choosing place IV Therapy today!</p>
+                                    
+                                    <h4>How it works:</h4>
+                                    <p>Our cold and flu IV therapies come complete with a robust list of powerful ingredients to alleviate your flu and head cold symptoms. Doses of Vitamin C help reduce the duration of your cold and flu relief, thanks to its antioxidant and immune system-boosting properties. Magnesium and vitamin B12 are both known to strengthen cells, create healthy new ones, and support healthy protein synthesis. Finally, rehydration and a combination of medicines help ease the painful, achy symptoms of your cold for added relief.</p>
+                                </div>
+                                <div class="w-2">
+                                    <!-- Appointment Btn -->
+                                    <div class="appointment-btn">
+                                        <button id="openForm" class="system-only">
+                                            <i class="fa fa-calendar-alt"></i> BOOK HERE
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                                    <div class="drips" data-filter="happy_tummy">
+                                        <div class="gallery-item">
+                                            <a href="drips.html?filter=happy_tummy">
+                                                <img src="images/gallery/DRIPS/happy_tummy.png" alt="Happy Tummy Drip">
+                                                <h3>Happy Tummy DripDrop</h3>
+                                            </a>
+                                        </div>
+                                        <div class="dripsdrop">
+                                            <p>Feeling bloated, fatigued, or struggling with constipation? It might be a sign your gut health needs attention. Fortunately, our happy tummy IV therapy for gut health could be a game-changer. By delivering essential electrolytes, amino acids, and glutamine directly into your bloodstream, can restore gut balance, reduce inflammation, and enhance the absorption of nutrients, helping you feel better and boost your overall well-being.</p>
+                                            
+                                            <h4>Benefits of Happy Tummy dripdrop</h4>
+                                            <div class="benefits-list">
+                                                <h4>Restores Gut Flora</h4>
+                                                <p>IV treatment helps replenish beneficial bacteria, promoting a healthy gut microbiome and supporting a robust gut lining. This is crucial for improving energy levels and overall wellness.</p>
+                                            
+                                                <h4>Reduces Inflammation</h4>
+                                                <p>Helps lower chronic inflammation with the aid of powerful antioxidants benefiting conditions such as Crohn’s disease and ulcerative colitis.</p>
+                                            
+                                                <h4>Improves Nutrient Absorption</h4>
+                                                <p>Delivers essential nutrients, including electrolytes and amino acids, directly into the bloodstream, bypassing digestive barriers and enhancing the absorption of nutrients.</p>
+                                                
+                                                <h4>Relieves IBS Symptoms</h4>
+                                                <p>Decreases discomfort associated with irritable bowel syndrome, including bloating and constipation, by supporting gut health and reducing symptoms.</p>
+
+                                                <h4>Boosts Immunity</h4>
+                                                <p>Replenishes vital nutrients and antioxidants, supporting the immune system and overall health.</p>
+                                            </div>
+                                        </div>
+                                        <div class="w-2">
+                                            <!-- Appointment Btn -->
+                                            <div class="appointment-btn">
+                                                <button id="openForm" class="system-only">
+                                                    <i class="fa fa-calendar-alt"></i> BOOK HERE
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                        
+                                    <div class="drips" data-filter="iv_hydra">
+                                        <div class="gallery-item">
+                                            <a href="drips.html?filter=iv_hydra">
+                                                <img src="images/gallery/DRIPS/iv_hydra.png" alt="IV Hydration Drip">
+                                                <h3>IV Hydration DripDrop</h3>
+                                            </a>
+                                        </div><br>
+                                      
+
+                                        <div class="dripsdrop">
+                                            <p>The original vitamin drip that started it all, and still stays strong.<br><strong>1 Liter of IV Fluids | Electrolytes</strong></p>
+                                            <p></p>
+                                    
+                                            <p>The IV Hydra Drip is a foundational IV drip service that provides all of the basic fluids and electrolytes your body needs to leave you feeling refreshed and revitalized. It has been used in the medical industry for decades as a treatment for dehydration.</p>
+                                    
+                                            <h4>This drip is recommended for individuals experiencing:</h4>
+                                            <div class="benefits-list">
+                                                <ul>
+                                                    <li>Brain fog</li>
+                                                    <li>Dehydration</li>
+                                                    <li>Fatigue</li>
+                                                    <li>Lethargy</li>
+                                                    <li>Muscle Aches</li>
+                                                    <li>Weakness</li>
+                                                </ul>
+                                            </div>
+                                    
+                                            <p>By introducing vital fluids and electrolytes directly into the bloodstream, the IV Hydra Drip provides instant hydration and quick relief for any symptoms related to dehydration. Even mild levels of dehydration can cause imbalances that lead to mental, emotional, and physical side effects.</p>
+                                    
+                                            <p>Try our classic IV hydration service and feel better instantly. <strong>Boost your results by adding an extra .5 liter of fluids for maximum hydration.</strong></p>
+                                        </div>
+                                        <div class="w-2">
+                                            <!-- Appointment Btn -->
+                                            <div class="appointment-btn">
+                                                <button id="openForm" class="system-only">
+                                                    <i class="fa fa-calendar-alt"></i> BOOK HERE
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                           
+                                    <div class="drips" data-filter="immunity_boost">
+                                        <div class="gallery-item">
+                                            <a href="drips.html?filter=immunity_boost">
+                                                <img src="images/gallery/DRIPS/immunity_boost.png" alt="Immunity Boost Drip">
+                                                <h3>Immunity Boost DripDrop</h3>
+                                            </a>
+                                        </div><br>
+                                        <div class="dripsdrop">
+                                            <p>Support your immune system with a blended IV bag of nutrients and vitamins.<br><strong>
+                                                1 Liter of IV Fluids | High Dose Vitamin C | High Dose Glutathione | Zinc</strong></p>
+                                    
+                                            <p>Keeping your immunity in top condition is important for fighting off disease, reducing inflammation, slowing the aging process, and preventing the development of long term health conditions. Our specially formulated Immuno Drip IV infusion includes essential vitamins and antioxidants essential vitamins and antioxidants that contribute to a healthy, thriving immune system. Your body will thank you after taking this Immuno Drip therapy.</p>
+                                    
+                                            <h4>Our Immunity booster Dripdrop IV Drip blend is recommended for those experiencing:</h4>
+                                            <div class="benefits-list">                                                
+                                                <ul>
+                                                    <li>Fatigue</li>
+                                                    <li>Frequent sickness</li>
+                                                    <li>Inflammation</li>
+                                                    <li>Stress</li>
+                                                    <li>Weakened immune system.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="w-2">
+                                            <!-- Appointment Btn -->
+                                            <div class="appointment-btn">
+                                                <button id="openForm" class="system-only">
+                                                    <i class="fa fa-calendar-alt"></i> BOOK HERE
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                           
+                                    <div class="drips" data-filter="sports_reboot">
+                                        <div class="gallery-item">
+                                            <a href="drips.html?filter=sports_reboot">
+                                                <img src="images/gallery/DRIPS/sports_reboot.png" alt="Immunity Boost Drip">
+                                                <h3>Sports Reboot DripDrop</h3>
+                                            </a>
+                                        </div><br>
+                                        <div class="dripsdrop">
+                                            <p>Muscle recovery and hydration, all in one.<br><strong>
+                                                1 Liter of IV Fluids | L-Carnitine | L-Arginine | Electrolytes</strong></p>
+                                    
+                                            <p>For athletes and those who want to recover faster from workouts, the Fit Dripdrop provides a concentrated intravenous dose of amino acids and vitamins that produce rapid results and support the rebuilding of muscles.Improve your performance, decrease soreness, and build strength faster with this specially formulated IV drip therapy.
+                                                The sports reboot Drip is recommended for clients who want to:</p>
+                                    
+                                            <div class="benefits-list">   
+                                                <ul>
+                                                    <li>Achieve maximum output</li>
+                                                    <li>Improve metabolism and burn fat</li>
+                                                    <li>Recover faster from workouts</li>
+                                                    <li>Reduce muscle soreness</li>
+                                                </ul>
+                                            </div>
+                                            <p>Whether you use this IV drip as a pre-endurance boost or post-workout recovery, the sports reboot Drip can help you train better, recover faster, and meet your fitness and weight loss goals.</p>
+                                            <p> Improve metabolism and burn fat
+                                                Recover faster from workouts
+                                                Reduce muscle soreness.
+                                                all of which are offered at our lounge in various locations in Lusaka.</p>
+                                                <h4>Benefits of the sports reboot IV Drip Infusions:</h4>
+                                            <p>L-Carnitine: This natural chemical aids the body in turning fat into an energy source. It is also critical for proper muscle, heart, and brain function.</p>
+                                            <p>L-Arginine: L-Arginine aids in the production of protein as well as supporting the circulatory system. It has been known to help lower blood pressure in addition to having other health benefits.</p>
+                                        </div>
+                                        <div class="w-2">
+                                            <!-- Appointment Btn -->
+                                            <div class="appointment-btn">
+                                                <button id="openForm" class="system-only">
+                                                    <i class="fa fa-calendar-alt"></i> BOOK HERE
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="drips" data-filter="fatty_burn">
+                                        <div class="gallery-item">
+                                            <a href="drips.html?filter=fatty_burn">
+                                                <img src="images/gallery/DRIPS/fatty_burn.png" alt="fatty_burn Drip">
+                                                <h3>Fatty Burn DripDrop</h3>
+                                            </a>
+                                        </div><br>
+                                        <div class="dripsdrop">
+                                            <p>Speed up metabolism with this boost of ingredients.<br><strong>1 Liter of IV Fluids | High Dose Carnitine | Amino Acids | Electrolytes</strong></p>
+                                            <p>Whether you’re trying to lose weight for a specific occasion or just generally want to feel more trim and fit, the fatty burn Dripdrop IV infusion can help you reach your slimming goal. Our fat burner 
+                                               drip essential blend of vitamins and minerals that will stimulate your metabolism, help your body burn extra calories, and increase energy.</p>
+                                               <h4>The Slim Drip is recommended for individuals who want to:</h4>
+                                        </div>
+                                            <div class="benefits-list">   
+                                                <ul>
+                                                    <li>Burn more fat</li>
+                                                    <li>Boost metabolism</li>
+                                                    <li>Grow and repair body issue</li>
+                                                    <li>Improve workout performance</li>
+                                                    <li>Increase energy</li>
+                                                </ul>
+                                            </div>
+                                            <p>If you’re frustrated with diets and workouts alone, or you just want to lose a few more pounds to reach your goal, 
+                                                this specially formulated intravenous drip is your answer. Can be combined with a Lipo B/C Injection or B-Complex Booster for extra benefits.</p>
+                                                <div class="w-2">
+                                                    <!-- Appointment Btn -->
+                                                    <div class="appointment-btn">
+                                                        <button id="openForm" class="system-only">
+                                                            <i class="fa fa-calendar-alt"></i> BOOK HERE
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                    </div>
+                        
+                                    <div class="drips" data-filter="headache">
+                                        <div class="gallery-item">
+                                            <a href="drips.html?filter=headache">
+                                                <img src="images/gallery/DRIPS/headache.png" alt="headache Drip">
+                                                <h3>Migraine & Headache DripDrop</h3>
+                                            </a>
+                                        </div><br>
+                                        <div class="dripsdrop">
+                                            <p>Relax with the ingredients needed to curb the nauseating migraine.<br>
+                                                <strong> Liter of IV Fluids | Magnesium | Reglan | Toradol</strong></p>
+                                            <p>A migraine can completely throw off your day or even your week. When you have a migraine or bad headache that won’t go away, our specially formulated
+                                                 migraine IV drip can relieve discomfort as quickly as possible, targeting nausea and inflammation.</p>
+                                            <p>In addition to relieving the pain and discomfort of migraines, our Migraine Drip intravenous infusion is beneficial for reducing:</p>
+                                            <div class="benefits-list">
+                                                <ul>  
+                                                    <li>Anxiety</li>
+                                                    <li>Dehydration</li>
+                                                    <li>Muscle tightness</li>
+                                                    <li>Nausea and vomiting</li>
+                                                </ul>
+                                            </div>
+                                            <p>The pain from migraines can be incapacitating and interfere with a person’s ability to work, go to school, or complete daily tasks. 
+                                                Whether you are a chronic migraine sufferer, or are experiencing your first migraine or severe headache, our specialized migraine IV infusion therapy can quickly relieve your pain and get you back on your feet. For added benefits, 
+                                                the Migraine Drip can be combined with Benadryl or a B-Complex Booster. To enjoy the benefits of this, you can visit one of our branches.</p>
+                                        </div>
+                                        <div class="w-2">
+                                            <!-- Appointment Btn -->
+                                            <div class="appointment-btn">
+                                                <button id="openForm" class="system-only">
+                                                    <i class="fa fa-calendar-alt"></i> BOOK HERE
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                         
+                                    <div class="drips" data-filter="detox_drip">
+                                        <div class="gallery-item">
+                                            <a href="drips.html?filter=detox_drip">
+                                                <img src="images/gallery/DRIPS/Detox_Drip.png" alt="Detox Drip">
+                                                <h3>Deluxe Detox DripDrop</h3>
+                                            </a>
+                                        </div><br>
+                                        <div class="dripsdrop">
+                                            <p>Help your body flush toxins more efficiently.<br>
+                                                <strong>1 Liter of IV Fluids | Electrolytes | High Dose Glutathione</strong></p>
+                                                <p>If your system feels clogged or inflamed as a result of stress, diet, alcohol consumption, or illness, the Detox Drip is the perfect IV drip service to cleanse and start over fresh. This popular intravenous infusion
+                                                     assists in removing toxins, relieving tension, and improving overall wellbeing.</p>
+                                        </div>
+                                        <div class="dripsdrop">
+                                         <h4>The Detox IV Drip is recommended for those experiencing:</h4>
+                                        </div>
+                                        <div class="benefits-list">
+                                            <ul>
+                                                <li>Brain fog</li>
+                                                <li>Fatigue</li>
+                                                <li>Inflammation</li>
+                                                <li>Stress</li>
+                                            </ul>
+                                           
+                                        </div>
+                                        <p>Feelings of fatigue, brain fog, and swelling can all be signs that your body is overwhelmed with toxins. The Detox Drip focuses on the liver –
+                                            the powerhouse of your detoxification system. This drip will assist in clearing the toxins and keeping your liver healthy and operating at its full potential.
+                                            Boost your results by combining the detoxification IV drip with the our immunity Booster, or Vitamin C Booster.</p>
+                                            <h4>Benefits of the Detox IV Drip Infusions:</h4>
+                                            <p>Electrolytes: Necessary for proper cellular and muscular functioning. Electrolytes also help regulate blood pressure and hydration.</p>
+                                            <p>High Dose Glutathione: Glutathione is a powerful antioxidant that can help eliminate free radicals in the body, boosting the immune system 
+                                               and helping prevent the development of certain health conditions.</p>
+                                               <div class="w-2">
+                                                <!-- Appointment Btn -->
+                                                <div class="appointment-btn">
+                                                    <button id="openForm" class="system-only">
+                                                        <i class="fa fa-calendar-alt"></i> BOOK HERE
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            
+                                    </div>
+                        
+                                    <div class="drips" data-filter="jet_lag">
+                                        <div class="gallery-item">
+                                            <a href="drips.html?filter=jet_lag">
+                                                <img src="images/gallery/DRIPS/jet_lag.png" alt="Jet Lag Drip">
+                                                <h3>Jet Lag DripDrop</h3>
+                                            </a>
+                                        </div><br>
+                                        <h4>Crossing time zones to come into town?</h4>
+                                        <p>Whether you’re here to get some business done or enjoy some time off, don’t let jet lag hamper your enjoyment or productivity.</p>
+                                        <p>Let our Jet Lag IV infusion therapy get you back to yourself as soon as possible.</p>
+                                        <div class="dripsdrop">
+                                            <h4>What’s in our jet lag</h4>
+                                        </div>
+                                        <div class="benefits-list">
+                                           
+                                            <ul>
+                                                <li>Iv fluids</li>
+                                                <li>Vitamins</li>
+                                                <li>Anti Inflammatory</li>
+                                                <li>Anti nausea</li>
+                                            </ul>
+                                        </div>
+                                        <div class="w-2">
+                                            <!-- Appointment Btn -->
+                                            <div class="appointment-btn">
+                                                <button id="openForm" class="system-only">
+                                                    <i class="fa fa-calendar-alt"></i> BOOK HERE
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="drips" data-filter="beauty">
+                                        <div class="gallery-item">
+                                            <a href="drips.html?filter=beauty">
+                                                <img src="images/gallery/DRIPS/beauty.png" alt="Beauty Drip">
+                                                <h3>Beauty Boost DripDrop</h3>
+                                            </a>
+                                        </div><br>
+                                        <h3>Glow from the inside, out.</h3>
+                                        <p><strong>1 Liter of IV Fluids | High Dose Vitamin C | High Dose Glutathione | Electrolytes</strong></p>
+                                        <p>As we age, our skin becomes less able to retain moisture and important nutrients. The Beauty DripDrops IV
+                                             infusion helps combat the effects of aging, sun exposure, and stress with natural vitamins that tightens and brightens from the inside out.</p>
+                                             
+                                             <div class="dripsdrop">
+                                                 <h4>The Beauty DripDrop IV Therapy is recommended for those experiencing:</h4>
+                                            </div>
+                                        <div class="benefits-list">
+                                            <ul>
+                                                <li>Dehydration</li>
+                                                <li>Dull or dry skin</li>
+                                                <li>Fine lines and wrinkles</li>
+                                                <li>Low energy</li>
+                                            </ul>
+                                          
+                                        </div>
+                                        <p>Whether you are preparing for a special occasion or just want your skin, hair and nails to feel refreshed and revitalized, the Beauty DripDrops
+                                            IV infusion is the perfect solution. This specially formulated blend improves youthful appearance by generating a healthy glow and improved skin complexion.
+                                            It can be combined with the Wellness and immunity Booster or Zinc Booster for added benefits.</p>
+                                        <h4>Benefits of the BeautyDripDrops IV Infusion:</h4>
+                                        <p><strong>Vitamin C:</strong>Vitamin C has been shown to help boost collagen production, improve skin tone and reduce signs of aging.</p>
+                                        <p><strong>Electrolytes:</strong> Necessary for proper cellular and muscular functioning. Electrolytes also help regulate blood pressure, hydrate the skin, and maintain energy.</p>
+                                        <p><strong>High Dose Glutathione:</strong> Glutathione is a powerful antioxidant that can help eliminate free radicals in the body, which can damage the skin. It also boosts the immune system and energy levels.</p>
+
+                                        <div class="w-2">
+                                            <!-- Appointment Btn -->
+                                            <div class="appointment-btn">
+                                                <button id="openForm" class="system-only">
+                                                    <i class="fa fa-calendar-alt"></i> BOOK HERE
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="drips" data-filter="hangover">
+                                        <div class="gallery-item">
+                                            <a href="drips.html?filter=hangover">
+                                                <img src="images/gallery/DRIPS/hangover.png" alt="Hangover Drip">
+                                                <h3>Hangover Relief DripDrop</h3>
+                                            </a>
+                                        </div><br>
+
+                                        <p>DripDrop IV Therapy is here to provide quick, efficient hangover relief whenever and wherever you need it.
+                                            Our hangover IV is designed to combat the most stubborn symptoms through hydration and a combination of vitamins and electrolytes.</p>
+                                        <p>All you have to do is call us (or book online), then sit back and relax — we’ll come to you or you come to us and help you get on with your day.</p>
+
+                                        <p>Our hangover cure dripdrop is packed with a combination of saline, vitamins, headache relief and anti-nausea medications.</p>
+                                        <h4>How it Works:</h4>
+                                        <p>
+                                            Help with symptoms like intense headaches, dehydration, fatigue, nausea, dizziness, vomiting, and more. We may be the closest thing to healing a hangover.</p>
+                                            <div class="w-2">
+                                                <!-- Appointment Btn -->
+                                                <div class="appointment-btn">
+                                                    <button id="openForm" class="system-only">
+                                                        <i class="fa fa-calendar-alt"></i> BOOK HERE
+                                                    </button>
+                                                </div>
+                                            </div>
+                                    </div>
+                             </div>
+
+
+                                    <div class="drips" data-filter="energy">
+                                        <div class="gallery-item">
+                                            <a href="drips.html?filter=energy">
+                                                <img src="images/gallery/DRIPS/energy.png" alt="Energy Drip">
+                                                <h3>Energy Boost DripDrop</h3>
+                                            </a>
+                                        </div><br>
+                                        <p>The Energy DripDrop treatment includes a specially formulated combination of IV fluids,
+                                             electrolytes, vitamins, and antioxidants to combat the symptoms of fatigue and low energy. </p>
+
+                                        <p>Skip the poorly formulated sports or energy drinks full of sugar, artificial flavoring, 
+                                            and coloring that your body doesn’t want or need by getting the Energy & Focus intravenous vitamins.</p>
+
+                                        <p>Our special energy boosting vitamins can also help enhance your mental clarity and overall performance.</p>
+                                        
+                                        <h3>Why do we experience energy loss?</h3>
+                                        <p>With busy schedules and the daily demands of life, it can be hard to feel energetic. But why does it happen?
+                                             Low energy can be caused by a wide variety of reasons and is often the result of a combination of factors.</p>
+                                             <div class="dripsdrop">
+                                                <h4>Causes of low energy include:</h4>
+                                            </div>
+                                        <div class="benefits-list">
+                                            
+                                            <ul>
+                                                <li>Low levels of B12</li>
+                                                <li>Anemia</li>
+                                                <li>Insufficient sleep</li>
+                                                <li>Certain illnesses</li>
+                                                <li>Electrolyte imbalances</li>
+                                                <li>Electrolyte imbalances</li>
+                                                <li>Certain neurological conditions</li>
+                                                <li>Overexertion</li>
+                                                <li>Stress</li>
+                                                <li>Thyroid conditions</li>
+                                            </ul>
+                                        </div>
+                                        <p>When you’re not feeling your best, it can be difficult to stay in top form to meet the challenges and demands of your day. 
+                                            Getting enough sleep, eating well, staying hydrated, and reducing your stress levels can help. </p>
+                                        <p>IV vitamins can also boost your energy levels by replenishing low levels of essential vitamins.</p>
+
+                                        <h4>How it works:</h4>
+                                        <p>IV energy DripDrop helps recharge your cells and improve mental clarity by supplying the body with fluids, vitamins and 
+                                        other nutrients involved in energy production.</p>
+                                            <div class="dripsdrop">
+                                                <h4>When your body’s energy levels get a boost, everything else falls into place. You are better able to:</h4>
+                                            </div>
+                                            <div class="benefits-list">
+                                                <ul>
+                                                    <li>Lose unwanted weight</li>
+                                                    <li>Sleep soundly</li>
+                                                    <li>Enjoy glowing, healthy skin</li>
+                                                    <li>Enhance your productivity at home or school</li>
+                                                    <li>Manage stress better and cope with whatever life throws at you</li>
+                                                    <li>Experience greater happiness and well-being</li>
+                                                    <li>Find the motivation needed for everyday tasks</li>
+                                                    <li>Boost your immune system and have fewer colds each year</li>
+                                                </ul>
+                                            </div>
+                                            <p>We pack our energy IV drip package with B vitamins. These vitamins play a significant role in aiding the body’s energy production.
+                                            B vitamins help convert dietary energy into ATP, or adenosine triphosphate, which is the form of energy that the body uses</p>
+
+                                            <div class="w-2">
+                                                <!-- Appointment Btn -->
+                                                <div class="appointment-btn">
+                                                    <button id="openForm" class="system-only">
+                                                        <i class="fa fa-calendar-alt"></i> BOOK HERE
+                                                    </button>
+                                                </div>
+                                            </div>
+                                    </div>
+
+
+                        </div>
+                        
+                </div>
+                
+                
+            </div>
+        </div>
+    </div>
+    <!-- End Sidebar Page Container -->
+
+
+
+        <!-- Main Footer -->
+        <footer class="main-footer style-four">
+            <div class="waves">
+                <div class="wave" id="wave1"></div>
+                <div class="wave" id="wave2"></div>
+                <div class="wave" id="wave3"></div>
+                <div class="wave" id="wave4"></div>
+            </div>
+
+            <!--Widgets Section-->
+            <div class="widgets-section">
+                <div class="auto-container">
+                    <div class="row">
+
+                        <!-- Left Column -->
+                        <div class="col-xl-4 col-lg-6 col-md-12">
+                            <div class="footer-widget">
+                                <div class="logo">
+                                    <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+                                </div>
+                                <p class="text-center">Our goal is to deliver quality of care in a courteous, respectful, and compassionate manner. We strive to be the best choice for your family healthcare.</p>
+                            </div>
+                        </div>
+        
+                        <!-- Middle Column (Opening Hours) -->
+                        <div class="col-xl-4 col-lg-6 col-md-12">
+                            <div class="footer-widget">
+                                <h2>Quick Links</h2>
+                                <ul class="footer-links">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="about.html">About Us</a></li>
+                                    <li><a href="services.html">service</a></li>
+                                    <li><a href="doctors.html">Doctors</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                                <div class="social-icon-one">
+                                    <a href="https://www.facebook.com/profile.php?id=61561167188441"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="https://www.instagram.com/rehan_hospital/?hl=en"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!-- Right Column (Get In Touch) -->
+                        <div class="col-xl-4 col-lg-6 col-md-12">
+                            <div class="footer-widget">
+                                <h2>Get In Touch</h2>
+                                <ul class="contact-list">
+                                    <li>
+                                        <span class="icon fas fa-map-marker-alt"></span>
+                                        10 Nkanchibiya Road, Lusaka, Zambia
+                                    </li>
+                                    <li>
+                                        <span class="icon fas fa-phone-volume"></span>
+                                        <a href="tel:+260770097375">+260770097375</a>
+                                    </li>                                                                                    
+                                    <li>
+                                        <span class="icon fas fa-envelope"></span>
+                                        <a href="mailto:info@hospital.com">info@rehanhospital.com</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+        
+                    </div>
+                </div>
+            </div>
+    
+
+        <!--Footer Bottom-->
+        <div class="footer-bottom">
+            <!-- Scroll To Top -->
+            <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-up"></span></div>
+            
+            <div class="auto-container">
+                <div class="inner-container">
+                     <div class="copyright-text">
+                        <p>© <a href="https://nearlooks.com/">Nearlooks</a> 2025 | All Rights Reserved</p>
+                    </div>
+
+                    <div class="footer-nav">
+                        <ul class="clearfix">
+                           
+                           <li><a href="Terms_Condition.html">Terms & Condition</a></li>  
+                           <li><a href="privacy_policy.html">Privacy Policy</a></li>  
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--End Main Footer -->
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const urlParams = new URLSearchParams(window.location.search);
+        const filter = urlParams.get("filter"); // Get filter from URL
+
+        const galleryItems = document.querySelectorAll(".gallery-item");
+
+        if (filter) {
+            galleryItems.forEach(item => {
+                const itemLink = item.querySelector("a").getAttribute("href");
+                if (itemLink.includes(`#${filter}`)) {
+                    item.style.display = "block"; // Show the matched item
+                } else {
+                    item.style.display = "none"; // Hide others
+                }
+            });
+        }
+    });
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const urlParams = new URLSearchParams(window.location.search);
+        const filter = urlParams.get("filter") || window.location.hash.substring(1); // Support both ?filter= and #hash
+        const galleryItems = document.querySelectorAll(".gallery-item");
+        const categoryLinks = document.querySelectorAll(".services-categories a");
+
+        if (filter && filter !== "all") {
+            galleryItems.forEach(item => {
+                const itemFilter = item.querySelector("a").getAttribute("href").split("=")[1] || 
+                                   item.querySelector("a").getAttribute("href").split("#")[1];
+
+                if (itemFilter === filter) {
+                    item.style.display = "block"; // Show matched item
+                } else {
+                    item.style.display = "none"; // Hide others
+                }
+            });
+        } else {
+            galleryItems.forEach(item => item.style.display = "block"); // Show all items if no filter
+        }
+
+        // Highlight active sidebar item
+        categoryLinks.forEach(link => {
+            if (link.href.includes(filter)) {
+                link.parentElement.classList.add("active");
+            } else {
+                link.parentElement.classList.remove("active");
+            }
+        });
+    });
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const urlParams = new URLSearchParams(window.location.search);
+        const filter = urlParams.get("filter") || "all";
+        const dripsSections = document.querySelectorAll(".drips");
+        const categoryLinks = document.querySelectorAll(".services-categories a");
+
+        dripsSections.forEach(section => {
+            if (filter === "all" || section.dataset.filter === filter) {
+                section.style.display = "block";
+            } else {
+                section.style.display = "none";
+            }
+        });
+
+        // Highlight the active sidebar link
+        categoryLinks.forEach(link => {
+            if (link.href.includes(`filter=${filter}`)) {
+                link.parentElement.classList.add("active");
+            } else {
+                link.parentElement.classList.remove("active");
+            }
+        });
+    });
+</script>
+
+    
+<script src="js/jquery.js"></script> 
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.fancybox.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/appear.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/mixitup.js"></script>
+<script src="js/script.js"></script>
+
+<!-- Color Setting -->
+<script src="js/color-settings.js"></script>
+</body>
+
+<!-- Mirrored from ary-themes.com/html/meditab/service-detail.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 17 Feb 2025 12:14:35 GMT -->
+</html>

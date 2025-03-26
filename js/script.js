@@ -654,35 +654,98 @@ if ($('.banner-carousel').length) {
 });
 
 
+function sendToWhatsapp() { 
+    let number = "+260972616895";
 
+    let name = document.getElementById('name').value.trim();
+    let phone = document.getElementById('phone').value.trim();
+    let date = document.getElementById('date').value.trim();
+    let time = document.getElementById('time').value.trim();
+    let treatment = document.getElementById('treatment').value.trim();
+    let treatmentName = document.getElementById('selectedTreatment').textContent.trim();
 
+    // Check if all fields are filled
+    if (!name || !phone || !date || !time || !treatment || !treatmentName) {
+        alert("Please fill in all fields before submitting.");
+        return;
+    }
 
+    // Format the WhatsApp message properly
+    let message = `*Name:* ${name}\n`
+                + `*Mobile:* ${phone}\n`
+                + `*Date:* ${date}\n`
+                + `*Time:* ${time}\n`
+                + `*Treatment:* ${treatmentName}\n`
+                + `*Message:* ${treatment}\n\n`
+                
 
+    // Encode message to prevent formatting issues
+    let url = `https://wa.me/${number}?text=${encodeURIComponent(message)}`;
 
-
-function sendToWhatsapp() {
-	let number = "+260972616895";
-
-	let name = document.getElementById('name').value.trim();
-	let phone = document.getElementById('phone').value.trim();
-	let date = document.getElementById('date').value.trim();
-	let time = document.getElementById('time').value.trim();
-	let treatment = document.getElementById('treatment').value.trim();
-
-	// Check if all fields are filled
-	if (!name || !phone || !date || !time || !treatment) {
-		alert("Please fill in all fields before submitting.");
-		return;
-	}
-
-	// Format the WhatsApp message properly
-	let message = `*Name:* ${name}\n`
-				+ `*Mobile:* ${phone}\n`
-				+ `*Date:* ${date}\n`
-				+ `*Time:* ${time}\n`
-				+ `*Message:* ${treatment}`;
-
-	// Encode message to prevent formatting issues
-	let url = `https://wa.me/${number}?text=${encodeURIComponent(message)}`;
-	window.open(url, "_blank");
+    window.open(url, "_blank");
 }
+
+
+
+
+
+document.querySelector("form").addEventListener("submit", function (event) {
+    event.preventDefault();
+    alert("Form submitted successfully!");
+    flipBackPopup(); // Flip back to the front after submission
+});
+ 
+     document.querySelector("form").addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent page reload
+    alert("Form submitted successfully!"); // Temporary success message
+}); 
+        function openPopup() {
+            document.getElementById("popup").style.display = "block";
+            document.getElementById("overlay").style.display = "block";
+        }
+
+        function closePopup() {
+            document.getElementById("popup").style.display = "none";
+            document.getElementById("overlay").style.display = "none";
+        }
+
+        function flipPopup(imageSrc, treatmentName) {
+    document.querySelector(".popup").classList.add("flip");
+
+    // Update the selected image
+    let selectedImage = document.getElementById("selectedImage");
+    selectedImage.src = imageSrc;
+    selectedImage.style.display = "block"; // Show image
+
+    // Update the treatment name
+    document.getElementById("selectedTreatment").textContent = treatmentName;
+}
+
+function flipBackPopup() {
+            document.querySelector(".popup").classList.remove("flip");
+        }
+
+
+
+
+		document.addEventListener("DOMContentLoaded", function () {
+			var openButtons = document.querySelectorAll("#openForm"); // Select all buttons
+			var modal = document.getElementById("popupForm");
+			var closeBtn = document.querySelector(".close");
+		
+			openButtons.forEach(function (btn) {
+				btn.addEventListener("click", function () {
+					modal.style.display = "block";
+				});
+			});
+		
+			closeBtn.addEventListener("click", function () {
+				modal.style.display = "none";
+			});
+		
+			window.addEventListener("click", function (event) {
+				if (event.target === modal) {
+					modal.style.display = "none";
+				}
+			});
+		});

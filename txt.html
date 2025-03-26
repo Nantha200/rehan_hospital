@@ -1,52 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab Facilities</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <meta charset="utf-8">
+    <title>Meditab | Medical HTML Template | Service Detail</title>
+    <!-- Stylesheets -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link href="css/color-switcher-design.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
     <style>
-        * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
-        body { background: #f8f9fa; text-align: center; }
-        .container { max-width: 1200px; margin: 50px auto; padding: 20px; }
-        h2 { margin-bottom: 20px; font-size: 28px; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
-        .facility { background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); opacity: 0; transform: translateY(20px); transition: all 0.5s ease-in-out; }
-        .facility i { font-size: 40px; color: #007bff; margin-bottom: 10px; }
-        .facility h3 { font-size: 18px; margin-bottom: 10px; }
-        .facility p { font-size: 14px; color: #555; }
-        @media (max-width: 768px) { .grid { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); } }
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .gallery-item {
+            position: relative;
+            width: 200px;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s;
+            background: rgba(180, 180, 180, 0.6);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            display: block;
+            border-radius: 10px;
+        }
+
+        .gallery-item h3 {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 5px 10px;
+            font-size: 14px;
+            text-align: center;
+            border-radius: 5px;
+            width: 90%;
+        }
     </style>
 </head>
+
 <body>
-    <div class="container">
-        <h2>Our Lab Facilities</h2>
-        <div class="grid" id="facilitiesGrid">
-            <div class="facility"><i class="fas fa-flask"></i><h3>Medical Laboratory</h3><p>Advanced diagnostics with precision.</p></div>
-            <div class="facility"><i class="fas fa-microscope"></i><h3>Histopathology</h3><p>Expert tissue analysis.</p></div>
-            <div class="facility"><i class="fas fa-heartbeat"></i><h3>Endocrinology</h3><p>Specialized diabetes care.</p></div>
-            <div class="facility"><i class="fas fa-x-ray"></i><h3>Digital X-ray</h3><p>High-resolution imaging.</p></div>
-            <div class="facility"><i class="fas fa-ribbon"></i><h3>Mammogram</h3><p>Early breast cancer detection.</p></div>
-            <div class="facility"><i class="fas fa-wave-square"></i><h3>3D Sonography</h3><p>Detailed ultrasound diagnostics.</p></div>
-            <div class="facility"><i class="fas fa-procedures"></i><h3>ECG/TMT</h3><p>Comprehensive heart checkups.</p></div>
-            <div class="facility"><i class="fas fa-clinic-medical"></i><h3>Cardiac CT Scan</h3><p>Advanced heart imaging.</p></div>
-            <div class="facility"><i class="fas fa-magnet"></i><h3>MRI Scan</h3><p>High-definition internal imaging.</p></div>
+
+<div class="page-wrapper">
+    <!-- Main Header -->
+    <header class="main-header header-style-four">
+        <div class="header-top-two">
+            <div class="auto-container">
+                <div class="inner-container">
+                    <div class="top-left">
+                        <ul>
+                            <li><span class="icon fa fa-phone-volume"></span> (00) 000 111 222.</li>
+                            <li><span class="icon fa fa-envelope"></span> info@somedomain.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-lower">
+            <div class="auto-container">
+                <div class="inner-container">
+                    <div class="logo-outer">
+                        <div class="logo"><a href="index.html"><img src="images/logo.png" alt="Logo"></a></div>
+                    </div>
+
+                    <div class="nav-outer">
+                        <nav class="main-menu navbar-expand-md navbar-light">
+                            <ul class="navigation clearfix">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li class="dropdown"><a href="services.html">Services</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="outer-box">
+                        <div class="appointment-btn">
+                            <button id="openFormSystem" class="system-only">
+                                <i class="fa fa-calendar-alt"></i> Appointment
+                            </button>
+                            <button id="openFormMobile" class="mobile-only">
+                                <img src="images/appoinment-symbol.png" alt="Appointment">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Appointment Popup -->
+        <div id="popupForm" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Appointment</h2>
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Mobile Number:</label>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{10,15}" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="button" class="btn" onclick="sendToWhatsapp()">Send</button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-title" style="background-image: url(images/background/16.jpg);">
+        <h1>Service Detail</h1>
+    </section>
+
+    <div class="sidebar-page-container">
+        <div class="auto-container">
+            <div class="row clearfix">
+                <div class="sidebar-side col-lg-4">
+                    <aside class="sidebar">
+                        <ul class="services-categories">
+                            <li class="active"><a id="all-services" href="#">All Services</a></li>
+                            <li><a href="#cold_flu">Cold and Flu</a></li>
+                            <li><a href="#happy_tummy">Happy Tummy</a></li>
+                        </ul>
+                    </aside>
+                </div>
+
+                <div class="content-side col-lg-8">
+                    <div class="image-gallery">
+                        <div class="gallery-item" data-filter="cold_flu">
+                            <a href="#cold_flu">
+                                <img src="images/gallery/DRIPS/cold_flu.png" alt="Cold & Flu Drip">
+                                <h3>Feel better DripDrop</h3>
+                            </a>
+                        </div>
+                        <div class="gallery-item" data-filter="happy_tummy">
+                            <a href="#happy_tummy">
+                                <img src="images/gallery/DRIPS/happy_tummy.png" alt="Happy Tummy Drip">
+                                <h3>Happy Tummy DripDrop</h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const facilities = document.querySelectorAll(".facility");
-            function showFacilities() {
-                facilities.forEach((facility, index) => {
-                    setTimeout(() => {
-                        facility.style.opacity = "1";
-                        facility.style.transform = "translateY(0)";
-                    }, index * 200);
-                });
-            }
-            showFacilities();
+
+    <footer class="main-footer">
+        <p>Copyright © 2025 Meditab. All rights reserved.</p>
+    </footer>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const categoryLinks = document.querySelectorAll(".services-categories a");
+        const galleryItems = document.querySelectorAll(".gallery-item");
+
+        categoryLinks.forEach(link => {
+            link.addEventListener("click", function (e) {
+                e.preventDefault();
+                const filter = this.getAttribute("href").substring(1);
+
+                if (this.id === "all-services") {
+                    galleryItems.forEach(item => item.style.display = "block");
+                } else {
+                    galleryItems.forEach(item => {
+                        if (item.dataset.filter === filter) {
+                            item.style.display = "block";
+                        } else {
+                            item.style.display = "none";
+                        }
+                    });
+                }
+
+                categoryLinks.forEach(link => link.parentElement.classList.remove("active"));
+                this.parentElement.classList.add("active");
+            });
         });
-    </script>
+    });
+
+    function sendToWhatsapp() {
+        alert("WhatsApp sending feature not implemented!");
+    }
+</script>
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+
 </body>
 </html>

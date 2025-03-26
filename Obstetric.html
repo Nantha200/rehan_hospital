@@ -33,7 +33,7 @@
       "name": "Rehan Hospital - Obstetric & Gynecology Care",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "10 Nkachimbya Road",
+        "streetAddress": "10 Nkanchibiya Road",
         "addressLocality": "Lusaka",
         "addressCountry": "Zambia"
       },
@@ -47,7 +47,7 @@
       "url": "https://rehanhospital.com/Obstetric.html",
       "contactPoint": {
         "@type": "ContactPoint",
-        "telephone": "+260972616895",
+        "telephone": "+260770097375",
         "contactType": "appointment scheduling"
       }
     }
@@ -69,13 +69,13 @@
                 <div class="inner-container">
                     <div class="top-left">
                         <ul>
-                           <li><span class="icon fa fa-phone-volume"></span> +260972616895</li> 
+                           <li><span class="icon fa fa-phone-volume"></span> +260770097375</li> 
                            <li><span class="icon fa fa-envelope"></span>info@rehanhospital.com</li> 
                         </ul>
                     </div>
 
                     <div class="top-right">
-                        <div class="text"><span class="icon fa fa-map-marker-alt"></span>10 Nkachimbya Road, Lusaka, Zambia</div>
+                        <div class="text"><span class="icon fa fa-map-marker-alt"></span>10 Nkanchibiya Road, Lusaka, Zambia</div>
                         <ul class="social-icon-three">
                           <li><a href="https://www.facebook.com/profile.php?id=61561167188441"><i class="fab fa-facebook-f"></i></a></li>
                           <li><a href="https://www.instagram.com/rehan_hospital/?hl=en"><i class="fab fa-instagram"></i></a></li>
@@ -111,6 +111,7 @@
                                 <li class="dropdown"><a href="services.html">Services</a>
                                     <ul>
                                         <li><a href="services.html">Hospital Services</a></li>
+                                        <li><a href="dripsdrop.html">DripDrop</a></li>
                                         <li><a href="lab.html">Lab facilities</a></li>
                                     </ul>
                                 </li>
@@ -125,15 +126,15 @@
                     <!-- Main Menu End-->
                     <div class="outer-box">
                                         
-                        <!-- Appointment Btn -->
-                        <div class="appointment-btn">
-                            <button id="openForm" class="system-only">
+                         <!-- Appointment Btn -->
+                         <div class="appointment-btn">
+                            <button class="system-only" onclick="openPopup()">
                                 <i class="fa fa-calendar-alt"></i> Appointment
                             </button>
-                            <button id="openForm" class="mobile-only">
+                            <button onclick="openPopup()" class="mobile-only">
                                 <img src="images/appoinment symbol.png" alt="Appointment">
                             </button>
-                          </div>
+                        </div>
                         <div class="mobile-nav-toggler"><span class="icon fa fa-bars"></span></div>
 
 
@@ -143,41 +144,121 @@
             </div>
         </div>
         <!-- End Header Lower -->
-        <div id="popupForm" class="modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <h2>Appointment</h2>
-                <form id="loginForm">
-                    <div class="form-group">
-                        <label for="name">Full Name:</label>
-                        <input type="text" id="name" class="input" name="name" required>
-                    </div>
-                
-                    <div class="form-group">
-                        <label for="phone">Mobile Number:</label>
-                        <input type="tel" id="phone" class="input" name="phone" pattern="[0-9]{10,15}" required>
-                    </div>
-                
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="date">Select Date:</label>
-                            <input type="date" id="date" class="input" name="date" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="time">Select Time:</label>
-                            <input type="time" id="time" name="time" class="input" required>
-                        </div>
-                    </div>
-                
-                    <div class="form-group">
-                        <label for="treatment">Message:</label>
-                        <textarea name="treatment" id="treatment" class="input" required></textarea>
-                    </div>
-                
-                    <button type="button" class="btn" onclick="sendToWhatsapp()">Send</button>
-                </form>
-            </div>
-        </div>
+        <div class="overlay popup-close" id="overlay" onclick="closePopup()"></div>
+
+  <div class="popup overflow-auto" id="popup">
+     <div class="front" style="overflow: scroll;">
+         <h3 class="appoinment-h3">Book Your Appointment</h3>
+         <button class="close-btn" onclick="closePopup()"><img src="images/gallery/cross.png"></button>
+ 
+         <div class="grid">
+             <button onclick="flipPopup('images/gallery/general-medicine.jpg', 'General Medicine')">
+                 <img src="images/gallery/general-medicine.jpg" alt="Image 1">
+                 <h3>General Medicine</h3>
+             </button>
+             <button onclick="flipPopup('images/gallery/general_surgery.jpeg', 'General Surgery')">
+                 <img src="images/gallery/general_surgery.jpeg" alt="Image 2">
+                 <h3>General Surgery</h3>
+             </button>
+             <button onclick="flipPopup('images/gallery/orthopedic.jpg', 'Orthopedic')">
+                 <img src="images/gallery/orthopedic.jpg" alt="Image 3">
+                 <h3>Orthopedic</h3>
+             </button>
+             <button onclick="flipPopup('images/gallery/neuro surgery.png', 'Neuro Surgery')">
+                 <img src="images/gallery/neuro surgery.png" alt="Image 4">
+                 <h3>Neuro Surgery</h3>
+             </button>
+             <button onclick="flipPopup('images/gallery/ent.jpg', 'Ear, Nose, and Throat')">
+                 <img src="images/gallery/ent.jpg" alt="Image 5">
+                 <h3>Ear, Nose, and Throat</h3>
+             </button>
+             <button onclick="flipPopup('images/gallery/Obstetrics & Gynecology.webp', 'Gynecology')">
+                 <img src="images/gallery/Obstetrics & Gynecology.webp" alt="Image 6">
+                 <h3>Gynecology</h3>
+             </button>
+ 
+             
+             <button onclick="flipPopup('images/gallery/dermatology.jpg', 'Dermatology')">
+                 <img src="images/gallery/dermatology.jpg" alt="Image 7">
+                 <h3>Dermatology</h3>
+             </button>
+ 
+            
+             <button onclick="flipPopup('images/gallery/urology.jpg', 'Urology')">
+                 <img src="images/gallery/urology.jpg" alt="Image 8">
+                 <h3>Urology</h3>
+             </button>
+ 
+             <button onclick="flipPopup('images/gallery/Sonography.png', 'Sonography')">
+                 <img src="images/gallery/Sonography.png" alt="Image 12">
+                 <h3>Sonography</h3>
+             </button>
+ 
+             <button onclick="flipPopup('images/gallery/diabetes.webp', 'Endocrine, Daibetic and hypertension')">
+                 <img src="images/gallery/diabetes.webp" alt="Image 10">
+                 <h3>Endocrine, Daibetic and hypertension</h3>
+             </button>
+ 
+             <button onclick="flipPopup('images/gallery/pharmacists.webp', 'Pharmacy')">
+                 <img src="images/gallery/pharmacists.webp" alt="Image 11">
+                 <h3>Pharmacy</h3>
+             </button>
+           
+             <button onclick="flipPopup('images/gallery/aesthetics.jpg', 'Aesthetics/ Iv hydration Therapy')">
+                 <img src="images/gallery/aesthetics.jpg" alt="Image 9">
+                 <h3>Aesthetics/ Iv hydration Therapy</h3>
+             </button>
+         </div>
+     </div>
+     <div class="back" style="overflow: scroll;">
+        
+         <form id="loginForm">
+             <div class="button-container">
+                 <button type="button" class="backward-btn" onclick="flipBackPopup()">
+                     <img src="images/gallery/left-arrow.png">
+                 </button>
+             </div>
+             <!-- Selected Image Preview -->
+             <div class="form-group-treatment">
+                 <label>Selected Treatment:</label>
+                 <img id="selectedImage" src="" style="width: 100px; height: 100px; display: none;">
+                 <h3 id="selectedTreatment"></h3>
+ 
+             </div>
+             
+ 
+             <div class="form-group">
+                 <label for="name">Full Name:</label>
+                 <input type="text" id="name" class="input" name="name" required>
+             </div>
+ 
+             <div class="form-group">
+                 <label for="phone">Mobile Number:</label>
+                 <input type="tel" id="phone" class="input" name="phone" pattern="[0-9]{10,15}" required>
+             </div>
+ 
+             <div class="form-group">
+                 <label for="date">Select Date:</label>
+                 <input type="date" id="date" class="input" name="date" required>
+             </div>
+ 
+             <div class="form-group">
+                 <label for="time">Select Time:</label>
+                 <input type="time" id="time" name="time" class="input" required>
+             </div>
+ 
+             <div class="form-group">
+                 <label for="treatment">Message:</label>
+                 <textarea name="treatment" id="treatment" class="input" required></textarea>
+             </div>
+ 
+             <div class="form-group">
+                 <button type="button" class="form-send-btn" onclick="sendToWhatsapp()">Send</button>
+             </div>
+         </form>
+     </div>
+ </div>
+ 
         <!-- Sticky Header  -->
         <div class="sticky-header">
             <div class="auto-container">
@@ -367,11 +448,11 @@
                                 <ul class="contact-list">
                                     <li>
                                         <span class="icon fas fa-map-marker-alt"></span>
-                                        10 Nkachimbya Road, Lusaka, Zambia
+                                        10 Nkanchibiya Road, Lusaka, Zambia
                                     </li>
                                     <li>
                                         <span class="icon fas fa-phone-volume"></span>
-                                        <a href="tel:+260972616895">+260972616895</a>
+                                        <a href="tel:+260770097375">+260770097375</a>
                                     </li>                                                                                    
                                     <li>
                                         <span class="icon fas fa-envelope"></span>
