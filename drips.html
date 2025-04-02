@@ -226,7 +226,13 @@ h4 {
         width:auto;
         }
 
+        .gallery-item img {
+    transition: transform 0.3s ease-in-out;
+}
 
+.gallery-item:hover img {
+    transform: scale(1.2);
+}
         
 
 </style>
@@ -247,19 +253,17 @@ h4 {
                 <div class="inner-container">
                     <div class="top-left">
                         <ul>
-                           <li><span class="icon fa fa-phone-volume"></span> (00) 000 111 222.</li> 
-                           <li><span class="icon fa fa-envelope"></span> info@somedomain.com</li> 
+                           <li><span class="icon fa fa-phone-volume"></span>+260770097375</li> 
+                           <li><span class="icon fa fa-envelope"></span>info@rehanhospital.com</li> 
                         </ul>
                     </div>
 
                     <div class="top-right">
-                        <div class="text"><span class="icon fa fa-map-marker-alt"></span> 121 King Street, Melbourne</div>
+                        <div class="text"><span class="icon fa fa-map-marker-alt"></span>10 Nkanchibiya Road, Lusaka, Zambia</div>
                         <ul class="social-icon-three">
-                            <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
-                            <li><a href="#"><span class="fab fa-twitter"></span></a></li>
-                            <li><a href="#"><span class="fab fa-dribbble"></span></a></li>
-                            <li><a href="#"><span class="fab fa-google"></span></a></li>
-                        </ul>
+                          <li><a href="https://www.facebook.com/profile.php?id=61561167188441"><i class="fab fa-facebook-f"></i></a></li>
+                          <li><a href="https://www.instagram.com/rehan_hospital/?hl=en"><i class="fab fa-instagram"></i></a></li>
+                      </ul>
                     </div>
                 </div>
             </div>
@@ -348,13 +352,31 @@ h4 {
                             <input type="time" id="time" name="time" class="input" required>
                         </div>
                     </div>
-                
+                    <div class="form-group">
+                        <label for="drip">Drips:</label>
+
+                        <select name="filter" class="services-dropdown input" >
+                            <option value="">Select Drips</option>
+                            <option value="cold_flu">Feel Better</option>
+                            <option value="happy_tummy">Happy Tummy</option>
+                            <option value="iv_hydra">IV Hydration</option>
+                            <option value="immunity_boost">Immunity Boost</option>
+                            <option value="sports_reboot">Sports Reboot</option>
+                            <option value="fatty_burn">Fatty Burn</option>
+                            <option value="headache">Headache</option>
+                            <option value="detox_drip">Detox Drip</option>
+                            <option value="jet_lag">Jet Lag</option>
+                            <option value="beauty">Beauty DripDrops</option>
+                            <option value="hangover">Hangover Cure DripDrop</option>
+                            <option value="energy">Energy DripDrop</option>
+                        </select>
+                    </div>
                     <div class="form-group">
                         <label for="treatment">Message:</label>
                         <textarea name="treatment" id="treatment" class="input" required></textarea>
                     </div>
                 
-                    <button type="button" class="btn" onclick="sendToWhatsapp()">Send</button>
+                    <button type="button" class="btn" onclick="sendWhatsAppMessage()">Send</button>
                 </form>
             </div>
         </div>
@@ -439,7 +461,7 @@ h4 {
                             <aside class="sidebar services-sidebar">
                                 <ul class="services-categories">
                                     <li class="active"><a href="dripsdrop.html">All Services</a></li>
-                                    <li><a href="drips.html?filter=cold_flu">Cold and Flu</a></li>
+                                    <li><a href="drips.html?filter=cold_flu">Feel Better</a></li>
                                     <li><a href="drips.html?filter=happy_tummy">Happy Tummy</a></li>
                                     <li><a href="drips.html?filter=iv_hydra">IV Hydration</a></li>
                                     <li><a href="drips.html?filter=immunity_boost">Immunity Boost</a></li>
@@ -466,7 +488,7 @@ h4 {
                             <div class="drips" data-filter="cold_flu">
                                 <div class="gallery-item">
                                     <a href="drips.html?filter=cold_flu">
-                                        <img src="images/gallery/DRIPS/cold_flu.png" alt="Cold & Flu Drip">
+                                        <img src="images/Dripdrop/002 copy.png" alt="Cold & Flu Drip">
                                         <h3>Feel better DripDrop</h3>
                                     </a>
                                 </div>
@@ -490,7 +512,7 @@ h4 {
                                     <div class="drips" data-filter="happy_tummy">
                                         <div class="gallery-item">
                                             <a href="drips.html?filter=happy_tummy">
-                                                <img src="images/gallery/DRIPS/happy_tummy.png" alt="Happy Tummy Drip">
+                                                <img src="images/Dripdrop/003 copy.png" alt="Happy Tummy Drip">
                                                 <h3>Happy Tummy DripDrop</h3>
                                             </a>
                                         </div>
@@ -528,7 +550,7 @@ h4 {
                                     <div class="drips" data-filter="iv_hydra">
                                         <div class="gallery-item">
                                             <a href="drips.html?filter=iv_hydra">
-                                                <img src="images/gallery/DRIPS/iv_hydra.png" alt="IV Hydration Drip">
+                                                <img src="images/Dripdrop/001 copy.png" alt="IV Hydration Drip">
                                                 <h3>IV Hydration DripDrop</h3>
                                             </a>
                                         </div><br>
@@ -569,7 +591,7 @@ h4 {
                                     <div class="drips" data-filter="immunity_boost">
                                         <div class="gallery-item">
                                             <a href="drips.html?filter=immunity_boost">
-                                                <img src="images/gallery/DRIPS/immunity_boost.png" alt="Immunity Boost Drip">
+                                                <img src="images/Dripdrop/004 copy.png" alt="Immunity Boost Drip">
                                                 <h3>Immunity Boost DripDrop</h3>
                                             </a>
                                         </div><br>
@@ -603,7 +625,7 @@ h4 {
                                     <div class="drips" data-filter="sports_reboot">
                                         <div class="gallery-item">
                                             <a href="drips.html?filter=sports_reboot">
-                                                <img src="images/gallery/DRIPS/sports_reboot.png" alt="Immunity Boost Drip">
+                                                <img src="images/Dripdrop/005 copy.png" alt="Immunity Boost Drip">
                                                 <h3>Sports Reboot DripDrop</h3>
                                             </a>
                                         </div><br>
@@ -644,7 +666,7 @@ h4 {
                                     <div class="drips" data-filter="fatty_burn">
                                         <div class="gallery-item">
                                             <a href="drips.html?filter=fatty_burn">
-                                                <img src="images/gallery/DRIPS/fatty_burn.png" alt="fatty_burn Drip">
+                                                <img src="images/Dripdrop/006 copy.png" alt="fatty_burn Drip">
                                                 <h3>Fatty Burn DripDrop</h3>
                                             </a>
                                         </div><br>
@@ -678,8 +700,8 @@ h4 {
                                     <div class="drips" data-filter="headache">
                                         <div class="gallery-item">
                                             <a href="drips.html?filter=headache">
-                                                <img src="images/gallery/DRIPS/headache.png" alt="headache Drip">
-                                                <h3>Migraine & Headache DripDrop</h3>
+                                                <img src="images/Dripdrop/007 copy.png" alt="headache Drip">
+                                                <h3>Headache DripDrop</h3>
                                             </a>
                                         </div><br>
                                         <div class="dripsdrop">
@@ -713,7 +735,7 @@ h4 {
                                     <div class="drips" data-filter="detox_drip">
                                         <div class="gallery-item">
                                             <a href="drips.html?filter=detox_drip">
-                                                <img src="images/gallery/DRIPS/Detox_Drip.png" alt="Detox Drip">
+                                                <img src="images/Dripdrop/008 copy.png" alt="Detox Drip">
                                                 <h3>Deluxe Detox DripDrop</h3>
                                             </a>
                                         </div><br>
@@ -756,7 +778,7 @@ h4 {
                                     <div class="drips" data-filter="jet_lag">
                                         <div class="gallery-item">
                                             <a href="drips.html?filter=jet_lag">
-                                                <img src="images/gallery/DRIPS/jet_lag.png" alt="Jet Lag Drip">
+                                                <img src="images/Dripdrop/009 copy.png" alt="Jet Lag Drip">
                                                 <h3>Jet Lag DripDrop</h3>
                                             </a>
                                         </div><br>
@@ -787,7 +809,7 @@ h4 {
                                     <div class="drips" data-filter="beauty">
                                         <div class="gallery-item">
                                             <a href="drips.html?filter=beauty">
-                                                <img src="images/gallery/DRIPS/beauty.png" alt="Beauty Drip">
+                                                <img src="images/Dripdrop/010 copy.png" alt="Beauty Drip">
                                                 <h3>Beauty Boost DripDrop</h3>
                                             </a>
                                         </div><br>
@@ -828,7 +850,7 @@ h4 {
                                     <div class="drips" data-filter="hangover">
                                         <div class="gallery-item">
                                             <a href="drips.html?filter=hangover">
-                                                <img src="images/gallery/DRIPS/hangover.png" alt="Hangover Drip">
+                                                <img src="images/Dripdrop/011 copy.png" alt="Hangover Drip">
                                                 <h3>Hangover Relief DripDrop</h3>
                                             </a>
                                         </div><br>
@@ -856,7 +878,7 @@ h4 {
                                     <div class="drips" data-filter="energy">
                                         <div class="gallery-item">
                                             <a href="drips.html?filter=energy">
-                                                <img src="images/gallery/DRIPS/energy.png" alt="Energy Drip">
+                                                <img src="images/Dripdrop/012 copy.png" alt="Energy Drip">
                                                 <h3>Energy Boost DripDrop</h3>
                                             </a>
                                         </div><br>
@@ -1106,6 +1128,34 @@ h4 {
     });
 </script>
 
+<script>
+function sendWhatsAppMessage() {
+    let name = document.getElementById("name")?.value.trim();
+    let phone = document.getElementById("phone")?.value.trim();
+    let date = document.getElementById("date")?.value.trim();
+    let time = document.getElementById("time")?.value.trim();
+    let drip = document.querySelector(".services-dropdown")?.value.trim();
+    let message = document.getElementById("treatment")?.value.trim();
+
+    // Check if all fields exist
+    if (!name || !phone || !date || !time || !drip || !message) {
+        alert("Please fill out all fields before sending.");
+        return;
+    }
+
+    // WhatsApp API URL
+    let whatsappNumber = "+260770097375";
+    let whatsappMessage = `Hello, I would like to book a drip.\n\n👤 Name: ${name}\n📞 Phone: ${phone}\n📅 Date: ${date}\n🕒 Time: ${time}\n💧 Drip: ${drip}\n📝 Message: ${message}`;
+    
+    let whatsappURL = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(whatsappMessage)}`;
+
+    // Open WhatsApp in a new tab
+    window.open(whatsappURL, "_blank");
+}
+
+    </script>
+    
+    
     
 <script src="js/jquery.js"></script> 
 <script src="js/popper.min.js"></script>
