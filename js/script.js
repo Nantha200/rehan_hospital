@@ -655,7 +655,7 @@ if ($('.banner-carousel').length) {
 
 
 function sendToWhatsapp() { 
-    let number = "+260972616895";
+    let number = "+260770097375";
 
     let name = document.getElementById('name').value.trim();
     let phone = document.getElementById('phone').value.trim();
