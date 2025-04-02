@@ -12775,8 +12775,8 @@ color: #ffffff;
 	cursor: pointer;
 }
 #popup .grid img {
-	width: 80px;
-height: 80px;
+	width: 60px;
+height: 60px;
 border-radius: 20%;
 object-fit: cover;
 transition: transform 0.3s;
@@ -12802,7 +12802,7 @@ transition: transform 0.3s;
 	text-align: center;
 }
 #popup .close-btn img{
-height:25px;
+    margin-top: -105px;
 }
 
 #popup .front .appoinment-h3 {
@@ -12833,9 +12833,7 @@ position: fixed;
 right:0;
 }
 
-#popup .front h3 {
-font-size: 1.5em; /* Adjust heading size */
-}
+
 
 #popup .back h3 {
 font-size: 1.5em; /* Adjust heading size */
@@ -12854,10 +12852,10 @@ font-size: 1.5em; /* Adjust heading size */
 }
 }
 
-
+/* 
 .close-btn{
 background-color: #ccc;
-}
+} */
 
 
 
