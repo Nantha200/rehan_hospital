@@ -2,953 +2,1183 @@
 <html lang="en">
 
 <head>
-<meta charset="utf-8">
-<title>Rehan Hospital | Best Medical Care in Lusaka, Zambia</title>
-<meta name="description" content="Rehan Hospital in Lusaka, Zambia provides expert medical care, 24/7 emergency services, and advanced treatments. Book an appointment today.">
-
-<!-- Stylesheets -->
-<link href="css/bootstrap.css" rel="stylesheet">
-<link href="css/style.css" rel="stylesheet">
-<link href="css/responsive.css" rel="stylesheet">
-<!--Color Switcher Mockup-->
-<link href="css/color-switcher-design.css" rel="stylesheet">
-
-<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-<link rel="icon" href="images/favicon.png" type="image/x-icon">
-
-<!-- Responsive -->
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
-<!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
-
-
-<script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Hospital",
-      "name": "Rehan Hospital",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "10 Nkanchibiya Road",
-        "addressLocality": "Lusaka",
-        "addressCountry": "Zambia"
-      },
-      "medicalSpecialty": "General Medicine",
-      "url": "https://rehanhospital.com",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+260770097375",
-        "contactType": "customer service"
-      }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="Welcome to NOOFAH ARCHITECTS in theni, your destination for NOOFAH ARCHITECTS and innovative design solutions. Explore our services and projects.">
+    <!-- Stylesheet -->
+    <link href="css/vendor/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/vendor/fontawesome.css">
+    <link rel="stylesheet" href="css/vendor/brands.css">
+    <link rel="stylesheet" href="css/vendor/regular.css">
+    <link rel="stylesheet" href="css/vendor/solid.css">
+    <link rel="stylesheet" href="css/vendor/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="image/NOOFAH LOGO - Copy.jpg">
+ 
+    <title>NOOFAH ARCHITECTS</title>
+    <style>
+        /* Keyframes for zoom-in and fade-in */
+        @keyframes zoomInFade {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        
+        /* Apply animation to the text and button */
+        .section .text-title {
+            animation: zoomInFade 1s ease-out forwards;
+            opacity: 0;
+            transform: scale(0.8);
+        }
+        
+        .section .btn {
+            animation: zoomInFade 1.2s ease-out forwards;
+            opacity: 0;
+            transform: scale(0.8);
+        }
+        
+        /* Overlay fade-in animation */
+        .section .image-overlay {
+            animation: zoomInFade 1.5s ease-out forwards;
+            opacity: 0;
+            transform: scale(0.8);
+        }
+        @keyframes zoomInOut {
+    0% {
+        transform: scale(1);
     }
-    </script>
-  
-    <meta property="og:title" content="Rehan Hospital | Best Medical Care in Lusaka">
-<meta property="og:description" content="Rehan Hospital provides expert healthcare services in Lusaka, Zambia. Book an appointment for 24/7 emergency care.">
-<meta property="og:image" content="https://rehanhospital.com/images/main-slider/1.jpg">
-<meta property="og:url" content="https://rehanhospital.com">
-<style>.fs-5 {
-    font-size: 1.25rem; /* Adjust as needed */
-  }
-  </style>
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Apply zoom animation on hover */
+.col img {
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Zoom-in on hover */
+.col:hover img {
+    animation: zoomInOut 1s ease-in-out forwards;
+}
+
+.section {
+  padding: 2rem 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.shadow {
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.background-box {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  top: 0;
+  left: 0;
+}
+
+.text-title {
+  z-index: 2; /* Ensure text stays above the background box */
+}
+
+.button-outline-white {
+  border: 1px solid #fff;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.button-outline-white:hover {
+  background-color: #fff;
+  color: #000;
+}
+@media (max-width: 770px) {
+    .accordion-image {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 722px) {
+    .text-gray-philosophy{
+        margin-left:-35px;
+    }
+}
+        </style>
+        
+        
 </head>
 
-<body>
+<body id="top">
+    <script src="js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/swiper-script.js"></script>
+    <script src="js/submit-form.js"></script>
+    <script src="js/vendor/isotope.pkgd.min.js"></script>
 
-<div class="page-wrapper">
-    
-    <!-- Preloader -->
-    <div class="preloader"></div>
-    
-    <!-- Main Header-->
-    <header class="main-header header-style-one">
-
-        <!--Main Box-->
-        <div class="auto-container">
-            <div class="main-box">
-                <div class="logo-outer">
-                    <div class="logo"><a href="index.html"><img src="images/logo.png" alt="" title=""></a></div>
+    <!-- Header -->
+    <section class="bg-dark-color1 py-4 border-bottom border-dark-gray font-1 hide">
+        <div class="r-container ">
+            <div
+                class="d-flex flex-lg-row flex-column align-items-center justify-content-lg-between justify-content-center gap-3">
+                <div class="d-flex flex-lg-row flex-column align-items-center gap-5">
+                    <div class="d-flex flex-row  align-items-center">
+                        <i class="fa-solid fa-location-dot accent-color fs-4"></i>
+                        <span class="text-black"><a href="https://maps.app.goo.gl/z45FwhZAQwVsLqtu6"target="_blank"
+                                style="color: black; font-size:12px;" >18/27, Kamala 2nd Street, Chinna Chokkikulam, Madurai - 625002</a></span>
+                    </div>
+                    <div class="d-flex flex-row  align-items-center">
+                        <i class="fa-solid fa-phone accent-color fs-4"></i>
+                        <span class="text-black"> <a class="text-black"target="_blank"
+                                href="tel:+91-8220133355" style="color: black; font-size:12px;">+91-8220133355</a></span>
+                    </div>
                 </div>
+                <div class="d-flex flex-row   align-items-center">
+                    <i class="fa-solid fa-clock accent-color fs-4"></i>
+                    <span class="text-black" style="color: black; font-size:12px;">Opening : Mon-Sun 10AM - 9PM</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-dark-color font-2 sticky-top">
+        <div class="r-container">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand logo-container" href="index.html">
+                        <img src="image/noofah logo.jpeg" alt="" class="img-fluid" width="80">
+                    </a>
+                    <button class="navbar-toggler accent-color" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars-staggered"></i>
+                    </button>
+                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-3">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="about_us.html">ABOUT US</a>
+                            </li>
+                            <!--<li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="about_us.html" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    ABOUT US
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="about_us.html">ABOUT US</a></li>
+                                    <li><a class="dropdown-item" href="history.html">HISTORY</a></li>
+                                    <li><a class="dropdown-item" href="team.html">OUR TEAM</a></li>
+                                </ul>
+                            </li>-->
 
-                <!--Nav Box-->
-                <div class="nav-outer">
-                    <!--Mobile Navigation Toggler-->
-                    <div class="mobile-nav-toggler"><span class="icon fa fa-bars"></span></div>
 
-                    <!-- Main Menu -->
-                    <nav class="main-menu navbar-expand-md navbar-light">
-                        <div class="collapse navbar-collapse clearfix" id="navbarSupportedContent">
-                            <ul class="navigation clearfix">
-                                <li><a href="index.html">Home</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    SERVICES
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="residential.html">RESIDENTIAL </a></li>
+                                    <li><a class="dropdown-item" href="commercial.html">COMMERCIAL</a></li>
+                                    <li><a class="dropdown-item" href="product-design.html">PRODUCT DESIGN</a></li>
+                                    <li><a class="dropdown-item" href="design-research.html">DESIGN RESEARCH</a></li>
+                                </ul>
+                            </li>
+                            <!--<li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    PAGES
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="project.html">PROJECT</a></li>
+                                    <li><a class="dropdown-item" href="project_detail.html">PROJECT DETAIL</a></li>
+                                    <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
+                                </ul>
+                            </li>-->
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="project.html">PROJECTS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">CONTACT US</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <!-- End Of Header -->
 
-                                <li><a href="about.html">About Us</a></li>
+    <main>
+        <section class="section image-infinite-bg position-relative"
+            style="background-size: cover; background-position: center ;padding: 15em 1em 15em 1em;"
+            data-images='["image/image-1920x900-2.jpg"]'>
+            <div class="r-container h-100">
+                <div class="image-overlay"></div>
+                <div class="d-flex flex-column justify-content-center align-items-center text-center gap-3 h-100 position-relative" style="z-index: 2;">
+                    <!-- Background Box -->
+                    <div class="background-box position-absolute w-100 h-100"></div>
+                  
+                    <!-- Content -->
+                    <h2 class="text-title text-white font-1 lh-1"> NOOFAH ARCHITECTS</h2>
+                    <h5 class="text-title font-1 lh-1 accent-color text-center">
+                      Your home should tell the story of who you are and be a collection of what you love.
+                    </h5>
+                    <div class="d-flex flex-row gap-3">
+                      <a  href="project.html" class="btn bg-transparent button-outline-white rounded-0 font-1  text-white">OUR PROJECTS</a>
+                    </div>
+                </div>
+                  
+            </div>
+        </section>
+        <section class="section image-infinite-bg1 position-relative"
+            style="background-size: cover; background-position: center ;padding: 15em 1em 15em 1em; background-image: url(image/banner/small.jpg);"
+            data-images='["image/banner/small.jpg"]'>
+            <div class="r-container h-100">
+                <div class="image-overlay"></div>
+                <div class="d-flex flex-column justify-content-center align-items-center text-center gap-3 h-100 position-relative"
+                    style="z-index: 2;">
+                    <div class="background-box position-absolute w-100 h-100"></div>
 
-                                <li class="dropdown"><a href="services.html">Services</a>
-                                    <ul>
-                                        <li><a href="services.html">Hospital Services</a></li>
-                                        <li><a href="dripsdrop.html">DripDrop</a></li>
-                                        <li><a href="lab.html">Lab facilities</a></li>
-                                    </ul>
-                                </li>
-                                                              
-                                <li><a href="doctors.html">Doctors</a></li>                          
-                                <li><a href="gallery.html">Gallery</a></li>
+                    <h2 class="text-title text-white lh-1" style="font-size: 30px;">NOOFAH ARCHITECTS</h2>
+                    <h5 class="text-title text-white lh-1">Your home should tell the story of who you are and be a collection of what you love. </h5>
 
-                                <li><a href="contact.html">Contacts</a></li>
-                               
-                            </ul>
-                          
-                        </div>
-                        
-                    </nav>
-                                 <div class="outer-box">
+                    <div class="d-flex flex-row gap-3">
+                        <a type="button" href="project.html"
+                            class="btn bg-transparent button-outline-white rounded-0 font-1">OUR PROJECTS</a>
                        
-                                    <div class="appointment-btn">
-                                       
-                                        <button onclick="openPopup()" style="height: 50px; border-radius: 20px; width:200px"class="system-only popup-btn">
-                                            <a href="#" class="theme-btn"><i class="icon fa fa-calendar-alt"></i> Appointment</a></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+              <div class="row row-cols-1 row-cols-lg-2 align-items-center">
+                <div class="col mb-3">
+                  <div class="d-flex flex-column gap-3">
+                    <h5 class="accent-color font-1 fw-semibold text-center">WELCOME TO NOOFAH ARCHITECTS</h5>
+                    <h3 class="text-black font-2 fw-semibold text-center">INTERIOR DESIGN</h3>
+                    <p class="text-gray font-1 text-center">
+                      With a keen eye for detail and a passion for aesthetics, we redefine the concept of
+                      interior design. Whether you seek a modern, minimalist retreat or a luxurious, classic
+                      ambiance, our interior solutions seamlessly blend style and functionality.
+                    </p>
+                    <h5 class="font-1 fw-semibold accent-color text-center">INNOVATIVE</h5>
+                    <p class="text-gray font-1 text-center">
+                      At NOOFAH ARCHITECTS, innovation is at the heart of everything we do. Our commitment
+                      to delivering unique and groundbreaking interior design solutions sets us apart.
+                    </p>
+                    <p class="text-gray font-1 text-center">
+                      We infuse innovation into every step of the process. Explore a
+                      world of imaginative possibilities as we redefine your living spaces with cutting-edge
+                      concepts and revolutionary design approaches.
+                    </p>
+                    <h5 class="font-1 fw-semibold accent-color text-center">CREATIVE</h5>
+                    <p class="text-gray font-1 text-center">
+                      Step into a realm of boundless creativity with NOOFAH ARCHITECTS. We believe in
+                      crafting not just spaces but experiences that resonate with your individuality.
+                    </p>
+                  </div>
+                </div>
+                <div class="col mb-3">
+                    <div class="row row-cols-2 row-cols-lg-2">
+                        <div class="col mt-5 mb-3">
+                            <div class="d-flex flex-column gap-3">
+                                <img src="image/1.jpg" alt="Interior Designers Company In Chennai" class="img-fluid shadow">
+                                <img src="image/2.jpg" alt="All Kind of Interior Design and Decoration" class="img-fluid shadow">
+                            </div>
+                        </div>
+                        <div class="col mb-3">
+                            <div class="d-flex flex-column gap-3">
+                                <img src="image/3.jpg" alt="Interior Design Solutions" class="img-fluid shadow">
+                                <img src="image/4.jpg" alt="Interior Design Costs" class="img-fluid shadow">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+              </div>
+            </div>
+          </section>
+          
 
-                                        <button class="mobile-only popup-btn" onclick="openPopup()">
-                                            <img src="images/appoinment symbol.png" alt="Appointment">
-                                        </button>
+        <section class="section background-1">
+            <div class="r-container">
+                <div class="row row-cols-1 row-cols-lg-2">
+                    <div class="col mb-3">
+                        <div class="position-relative">
+                                  <img
+                                    src="image/image-600x600-1.jpg" alt="Interior Design" class="img-fluid"
+                                    style="z-index: -2;">
+                            <div class="position-absolute bottom-0 start-0 ms-4 mb-4">
+                                <!-- Button trigger modal -->
+                                <!--<div class="d-flex flex-row gap-3 align-items-center">
+                                    <button type="button" class="btn request-loader" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        <i class="fa-solid fa-play"></i>
+                                    </button>
+                                    <span class="text-white fw-semibold font-1 fs-5">WATCH VIDEO</span>
+                                </div>-->
 
+                                <!-- Modal -->
+                                <div class="modal fade bg-overlay" id="exampleModal" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                                        <!--<div class="container modal-content bg-dark-color">
+                                            <iframe class="ifr-video"
+                                                src="https://www.youtube.com/embed/FK2RaJ1EfA8?autoplay=1"
+                                                frameborder="0"></iframe>
+                                        </div>-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-3">
+                        <div class="d-flex flex-column gap-3 shadow p-3">
+                            <h5 class="accent-color font-1 fw-semibold">WE GIVE THE BEST</h5>
+                            <h3 class="text-black font-2 fw-semibold">Innovative idea and stylish design</h3>
+                            <p class="text-gray font-1">
+                                NOOFAH ARCHITECTS invites you to embark on a journey of unrivaled creativity and
+                                luxury. We take pride in delivering unique concepts and trendy designs that push the
+                                boundaries of interior excellence. To create environments that are both cutting-edge and
+                                naturally attractive, our team of visionaries combines forward-thinking concepts with
+                                timeless elegance.
+                            </p>
+                            <div>
+                                <a href="project.html" type="button"
+                                    class="btn rounded-0 bg-dark-color bg-accent-color-hover text-white">OUR
+                                    PROJECTS</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section class="section">
+            <div class="r-container">
+                <div class="row row-cols-1 row-cols-lg-2">
+                    <div class="col mb-3">
+                        <div class="d-flex flex-column gap-3">
+                            <h5 class="accent-color font-1 fw-semibold">OUR RESEARCH</h5>
+                            <h3 class="text-black font-2 fw-semibold">MAKE YOUR STATEMENT IN STYLE</h3>
+                            <p class="text-gray font-1">
+                                Luxe Living Concepts: Where innovative ideas seamlessly fuse with stylish designs, crafting spaces that redefine the art of living.
+                            </p>
+                            <div class="d-flex flex-column gap-4">
+                                <div class="r-progress w-100" style="--value:95;">
+                                    <span class="text-black fw-semibold font-1">PROJECT ANALYSIS</span>
+                                    <div class="progress-container mt-2">
+                                        <div class="r-progress-bar percentage-label">
+                                            <div class="progress-value"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="r-progress w-100" style="--value:95;">
+                                    <span class="text-black fw-semibold font-1">PRODUCT DESIGN</span>
+                                    <div class="progress-container mt-2">
+                                        <div class="r-progress-bar percentage-label">
+                                            <div class="progress-value"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="r-progress w-100" style="--value:95;">
+                                    <span class="text-black fw-semibold font-1">DESIGN RESEARCH</span>
+                                    <div class="progress-container mt-2">
+                                        <div class="r-progress-bar percentage-label">
+                                            <div class="progress-value"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-3">
+                        <div class="ps-5">
+                           <a href="image/image-600x600-2.jpg" data-fslightbox="gallery-1"><img src="image/image-600x600-2.jpg" alt="What is the rate of interior work in Chennai?" class="img-fluid"></a> 
+                        </div>
+                        <div class="shadow p-3">
+                            <div
+                                class="d-flex flex-lg-row flex-column justify-content-lg-around justify-content-center gap-3">
+                                <div class="d-flex flex-column align-items-center">
+                                    <h2 class="accent-color lh-1 font-2 fw-semibold">5</h2>
+                                    <span class="text-gray font-1 fw-bold">YEARS OF EXPERIANCE</span>
+                                </div>
+                                <div class="d-flex flex-column align-items-center">
+                                    <h2 class="accent-color lh-1 font-2 fw-semibold">871</h2>
+                                    <span class="text-gray font-1 fw-bold">PROJECTS COMPLETED</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <section class="section background-2 mt-3">
+            <div class="r-container">
+                <div class="row row-cols-1 row-cols-lg-2">
+                    <div class="col mb-3">
+                        <div class="row row-cols-1 row-cols-lg-2">
+                            <div class="col mb-3">
+                                <a href="residential.html">
+                                    <div
+                                        class="bg-dark-color d-flex flex-column text-center gap-3 justify-content-center align-items-center py-5 px-4">
+                                        <div style="max-width: 50px;">
+                                            <img src="image/icon-1.png" alt="How much should interior cost?"
+                                                class="img-fluid">
+                                        </div>
+                                        <div class="text-white font-1">
+                                            <h5 class="text-center">RESIDENTIAL</h5>
+                                            <p class="text-center">Our Residential Designs Redefine Comfort and Style.</p>
+                                        </div>
+                                    </div>
+                                </a>
+
+                            </div>
+                            <div class="col mb-3">
+                                <a href="commercial.html">
+                                    <div
+                                        class="bg-dark-hover border border-light border-2 d-flex flex-column text-center gap-3 justify-content-center align-items-center py-5 px-4">
+                                        <div style="max-width: 50px;">
+                                            <img src="image/icon-2.png" alt="interior design near me" class="img-fluid">
+                                        </div>
+                                        <div class="font-1">
+                                            <h5 class="text-center">COMMERCIAL</h5>
+                                            <p class="text-center">Inspiring Commercial Spaces develop Work Environments with Our Innovative
+                                                Designs.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+
+                            </div>
+                            <div class="col mb-3">
+                                <a href="product-design.html">
+                                    <div
+                                        class="bg-dark-hover border border-light border-2 d-flex flex-column text-center gap-3 justify-content-center align-items-center py-5 px-4">
+                                        <div style="max-width: 50px;">
+                                            <img src="image/icon-3.png" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="font-1">
+                                            <h5 class="text-center">PRODUCT DESIGN</h5>
+                                            <p class="text-center">Innovative Product Design Blending Form, Function, and Distinctive Style.
+                                            </p>
+                                        </div>
                                     </div>
 
-                                </div>
-                    <!-- Main Menu End-->
+                                </a>
 
+                            </div>
+                            <div class="col mb-3">
+                                <a href="design-research.html">
+                                    <div
+                                        class="bg-dark-hover border border-light border-2 d-flex flex-column text-center gap-3 justify-content-center align-items-center py-5 px-4">
+                                        <div style="max-width: 50px;">
+                                            <img src="image/icon-4.png" alt="interior design websites"
+                                                class="img-fluid">
+                                        </div>
+                                        <div class="font-1">
+                                            <h5 class="text-center">DESIGN RESEARCH</h5>
+                                            <p class="text-center">Exploring Boundaries Design Research for Innovative and Impactful
+                                                Solutions.</p>
+                                        </div>
+                                    </div>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-3">
+                        <div class="d-flex flex-column gap-3 p-3">
+                            <h5 class="accent-color font-1 fw-semibold">OUR SERVICE</h5>
+                            <h4 class="text-black font-2 fw-semibold">WE DESIGN MODREN AND ELEGANT</h4>
+                            <p class="text-gray font-1 text-center">
+                                At NOOFAH ARCHITECTS, our passion is crafting modern and elegant designs that
+                                transcend time. With a keen eye for contemporary aesthetics and a commitment to timeless
+                                elegance, our team seamlessly merges innovation and sophistication. From
+                                conceptualization to execution, we redefine spaces, infusing each project with a touch
+                                of luxury. Elevate your surroundings with our bespoke design solutions, where modernity
+                                meets enduring style, creating spaces that stand as a testament to refined living.
+                            </p>
+                            <div>
+                                <a href="contact.html" type="button"
+                                    class="btn rounded-0 bg-dark-color bg-accent-color-hover text-white">CONTACT US</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="r-container">
+                <div class="d-flex flex-column gap-3">
+                    <h5 class="accent-color font-1 fw-semibold text-center">OUR PROJECT</h5>
+                    <h3 class="text-black font-2 fw-semibold text-center">OUR LATEST PROJECT</h3>
+                    <p class="text-gray font-1 text-center">
+                        Explore our latest project, a testament to innovation and style. Meticulously curated, it blends
+                        modern concepts with timeless elegance, transforming spaces into captivating havens. At NOOFAH ARCHITECTS
+                        , each project is a masterpiece, reflecting our commitment to redefining
+                        contemporary living.
+                    </p>
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2">
+                        <div class="col mb-3">
+                            <div class="overlay-card" style="background-image: url(image/index/1.jpg);">
+                                <div class="overlay-body gap-3">
+                                    <h5 class="text-white fw-semibold font-2">RESIDENTIAL DESIGN</h5>
+                                    <div>
+                                        <a href="project.html" class="btn rounded-0 btn-accent-light fw-bold font-2">SEE MORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-3">
+                            <div class="d-flex gap-3 flex-md-row flex-column">
+                                <div class="accordion-image">
+                                    <div class="overlay-card" style="background-image: url(image/index/2.jpg);">
+                                        <div class="overlay-body gap-3">
+                                            <h5 class="text-white fw-semibold font-2">COMMERCIAL</h5>
+                                            <div>
+                                                <a href="project.html" class="btn rounded-0 btn-accent-light fw-bold font-2">SEE MORE</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-image">
+                                    <div class="overlay-card" style="background-image: url(image/index/3.jpg);">
+                                        <div class="overlay-body gap-3">
+                                            <a href="image/index/3.jpg" data-fslightbox="gallery-2" class="btn-outline-circle p-0">
+                                                <i class="fa-solid fa-plus"></i>
+                                            </a>
+                                            <h5 class="text-white fw-semibold font-2">PRODUCT DESIGN</h5>
+                                            <div>
+                                                <a href="project.html" class="btn rounded-0 btn-accent-light fw-bold font-2">SEE MORE</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-image">
+                                    <div class="overlay-card" style="background-image: url(image/index/4.jpg);">
+                                        <div class="overlay-body gap-3">
+                                            <a href="image/index/4.jpg" data-fslightbox="gallery-2" class="btn-outline-circle p-0">
+                                                <i class="fa-solid fa-plus"></i>
+                                            </a>
+                                            <h5 class="text-white fw-semibold font-2">DESIGN RESEARCH</h5>
+                                            <div>
+                                                <a href="project.html" class="btn rounded-0 btn-accent-light fw-bold font-2">SEE MORE</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     
                 </div>
             </div>
-        </div>
- <!-- Popup Modal -->
- 
- <div class="overlay popup-close" id="overlay" onclick="closePopup()"></div>
+        </section>
 
- <div class="popup overflow-auto" id="popup">
-    <div class="front" style="overflow: scroll;">
-        <h3 class="appoinment-h3">Book Your Appointment</h3>
-        <div class="close-btn" onclick="closePopup()"><img src="images/gallery/cross.png"></div>
-
-        <div class="grid">
-            <button onclick="flipPopup('images/gallery/general-medicine.jpg', 'General Medicine')">
-                <img src="images/gallery/general-medicine.jpg" alt="Image 1">
-                <h3>General Medicine</h3>
-            </button>
-            <button onclick="flipPopup('images/gallery/general_surgery.jpeg', 'General Surgery')">
-                <img src="images/gallery/general_surgery.jpeg" alt="Image 2">
-                <h3>General Surgery</h3>
-            </button>
-            <button onclick="flipPopup('images/gallery/orthopedic.jpg', 'Orthopedic')">
-                <img src="images/gallery/orthopedic.jpg" alt="Image 3">
-                <h3>Orthopedic</h3>
-            </button>
-            <button onclick="flipPopup('images/gallery/neuro surgery.png', 'Neuro Surgery')">
-                <img src="images/gallery/neuro surgery.png" alt="Image 4">
-                <h3>Neuro Surgery</h3>
-            </button>
-            <button onclick="flipPopup('images/gallery/ent.jpg', 'Ear, Nose, and Throat')">
-                <img src="images/gallery/ent.jpg" alt="Image 5">
-                <h3>Ear, Nose, and Throat</h3>
-            </button>
-            <button onclick="flipPopup('images/gallery/Obstetrics & Gynecology.webp', 'Gynecology')">
-                <img src="images/gallery/Obstetrics & Gynecology.webp" alt="Image 6">
-                <h3>Gynecology</h3>
-            </button>
-
-            
-            <button onclick="flipPopup('images/gallery/dermatology.jpg', 'Dermatology')">
-                <img src="images/gallery/dermatology.jpg" alt="Image 7">
-                <h3>Dermatology</h3>
-            </button>
-
-           
-            <button onclick="flipPopup('images/gallery/urology.jpg', 'Urology')">
-                <img src="images/gallery/urology.jpg" alt="Image 8">
-                <h3>Urology</h3>
-            </button>
-
-            <button onclick="flipPopup('images/gallery/Sonography.png', 'Sonography')">
-                <img src="images/gallery/Sonography.png" alt="Image 12">
-                <h3>Sonography</h3>
-            </button>
-
-            <button onclick="flipPopup('images/gallery/diabetes.webp', 'Endocrine, Daibetic and hypertension')">
-                <img src="images/gallery/diabetes.webp" alt="Image 10">
-                <h3>Endocrine, Daibetic and hypertension</h3>
-            </button>
-
-            <button onclick="flipPopup('images/gallery/pharmacists.webp', 'Pharmacy')">
-                <img src="images/gallery/pharmacists.webp" alt="Image 11">
-                <h3>Pharmacy</h3>
-            </button>
-          
-            <button onclick="flipPopup('images/gallery/aesthetics.jpg', 'Aesthetics/ Iv hydration Therapy')">
-                <img src="images/gallery/aesthetics.jpg" alt="Image 9">
-                <h3>Aesthetics/ Iv hydration Therapy</h3>
-            </button>
-        </div>
-    </div>
-    <div class="back" style="overflow: scroll;">
-       
-        <form id="loginForm">
-            <div class="button-container">
-                <button type="button" class="backward-btn" onclick="flipBackPopup()">
-                    <img src="images/gallery/left-arrow.png">
-                </button>
-            </div>
-            <!-- Selected Image Preview -->
-            <div class="form-group-treatment">
-                <label>Selected Treatment:</label>
-                <img id="selectedImage" src="" style="width: 100px; height: 100px; display: none;">
-                <h3 id="selectedTreatment"></h3>
-
-            </div>
-            
-
-            <div class="form-group">
-                <label for="name">Full Name:</label>
-                <input type="text" id="name" class="input" name="name" required>
-            </div>
-
-            <div class="form-group">
-                <label for="phone">Mobile Number:</label>
-                <input type="tel" id="phone" class="input" name="phone" pattern="[0-9]{10,15}" required>
-            </div>
-
-            <div class="form-group">
-                <label for="date">Select Date:</label>
-                <input type="date" id="date" class="input" name="date" required>
-            </div>
-
-            <div class="form-group">
-                <label for="time">Select Time:</label>
-                <input type="time" id="time" name="time" class="input" required>
-            </div>
-
-            <div class="form-group">
-                <label for="treatment">Message:</label>
-                <textarea name="treatment" id="treatment" class="input" required></textarea>
-            </div>
-
-            <div class="form-group">
-                <button type="button" class="form-send-btn" onclick="sendToWhatsapp()">Send</button>
-            </div>
-        </form>
-    </div>
-</div>
-        <!-- Sticky Header  -->
-        <div class="sticky-header">
-            <div class="auto-container">
-                <div class="inner-container">
-                    <!--Logo-->
-                    <div class="logo">
-                        <a href="index.html" title=""><img src="images/logo.png" alt="" title=""></a>
-                    </div>
-
-                    <!--Right Col-->
-                    <div class="nav-outer">
-                        <!-- Main Menu -->
-                        <nav class="main-menu">
-                            <div class="navbar-collapse show collapse clearfix">
-                                 <ul class="navigation clearfix"><!--Keep This Empty / Menu will come through Javascript--></ul>
-                            </div>
-                        </nav><!-- Main Menu End-->
-                    </div>
-                </div>
-            </div>
-        </div><!-- End Sticky Menu -->
-
-
-        <!-- Mobile Menu  -->
-        <div class="mobile-menu">
-            <div class="menu-backdrop"></div>
-            <div class="close-btn"><span class="icon fa fa-times"></span></div>
-            
-            <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
-            <nav class="menu-box">
-                <div class="nav-logo"><a href="index.html"><img src="images/logo.png" alt="" title=""></a></div>
-                <ul class="navigation clearfix"><!--Keep This Empty / Menu will come through Javascript--></ul>
-            </nav>
-        </div><!-- End Mobile Menu -->
-
-
-        <!-- Header Search -->
-        <div class="search-popup">
-            <span class="search-back-drop"></span>
-            <button class="close-search"><span class="fa fa-times"></span></button>
-            <div class="search-inner">
-                <form method="post" action="https://ary-themes.com/html/meditab/blog-showcase.html">
-                    <div class="form-group">
-                        <input type="search" name="search-field" value="" placeholder="Search..." required="">
-                        <button type="submit"><i class="flaticon-magnifying-glass"></i></button>
-                    </div>
-                </form>
-            </div>
-        </div>
-        <!-- End Header Search -->
-
-    </header>
-    <!--End Main Header -->
-   
-    <!-- Banner Section -->
-    <section class="banner-section">
-        <div class="swiper-container banner-carousel">
-            <div class="swiper-wrapper">
-                <!-- Slide Item -->
-                <div class="swiper-slide slide-item" style="background-image: url(images/main-slider/1.jpg);" alt="Rehan Hospital - Best Medical Care in Lusaka" loading="lazy">
-                    <div class="bg-circle"></div>
-                    <div class="content-box">
-                        <div class="content">
-                            <div class="auto-container">
-                                <div class="row">
-                                    <div class="content-column col-lg-6 col-md-12">                                 
-                                        <div class="inner-column">
-                                            <h1>Expert Medical Care</h1>
-                                            <div class="text">World-class healthcare with experienced doctors and advanced treatments.</div>
-                                            <div class="btn-box" >
-                                                <button id="openForm" class="system-only appointment-popup" onclick="openPopup()">
-                                                    <i class="fa fa-calendar-alt"></i> Appointment
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="image-column col-lg-6 col-md-12">
-                                        <div class="image-box">
-                                            <figure class="image"><img src="images/main-slider/IMAGE-3.png" alt=""></figure>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Slide Item -->
-                <div class="swiper-slide slide-item" style="background-image: url(images/main-slider/1.jpg);" alt="Rehan Hospital - Best Medical Care in Lusaka" loading="lazy">
-                    <div class="content-box">
-                        <div class="content">
-                            <div class="auto-container">
-                                <div class="row">
-                                    <div class="content-column col-lg-6 col-md-12">                                 
-                                        <div class="inner-column">
-                                            <h1>24/7 Emergency Services</h1>
-                                            <div class="text">Immediate and quality emergency care, anytime you need.</div>
-                                            <div class="btn-box">
-                                                <a href="services.html" class="theme-btn btn-style-one"><span class="btn-title" >Find Out More</span></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="image-column col-lg-6 col-md-12">
-                                        <div class="image-box">
-                                            <figure class="image"><img src="images/main-slider/IMAGE-2 (2).png" alt="" ></figure>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Slide Item -->
-                <div class="swiper-slide slide-item" style="background-image: url(images/main-slider/1.jpg);" alt="Rehan Hospital - Best Medical Care in Lusaka" loading="lazy">
-                    <div class="content-box">
-                        <div class="content">
-                            <div class="auto-container">
-                                <div class="row">
-                                    <div class="content-column col-lg-6 col-md-12">                                 
-                                        <div class="inner-column">
-                                            <h1>Advanced Medical Technology</h1>
-                                            <div class="text">Equipped with cutting-edge technology for accurate diagnosis & treatment.</div>
-                                            <div class="btn-box" >
-                                                <button id="openForm" class="system-only appointment-popup" onclick="openPopup()">
-                                                    <i class="fa fa-calendar-alt"></i> Appointment
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="image-column col-lg-6 col-md-12">
-                                        <div class="image-box">
-                                            <figure class="image"><img src="images/main-slider/IMAGE-1 (2).png" alt=""></figure>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+        <section class="section bg-attach-fixed position-relative" >
+            <div class="r-container">
+                <div class="image-overlay-2"></div>
+                <div class="row row-col-1 row-cols-lg-2 position-relative" style="z-index: 2;">
+                    <div class="d-flex flex-column gap-3">
+                        <h5 class="accent-color font-1 fw-semibold">SUSTAINABLE LUXURY </h5>
+                        <!--<h3 class="text-white font-2 fw-semibold">RELENTLES PURSUIT OF PERFECTION</h3>-->
+                        <P class="text-white text-center">Committed to eco-conscious practices, we integrate sustainable elements
+                            into our designs, ensuring responsible living without compromising on opulence.</P>
+                        <div>
+                                <button type="button" class="btn rounded-0 btn-accent-dark text-white" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                    CONTACT NOW
+                                  </button>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <!-- Add Pagination -->
-            <div class="banner-pagination"></div>
-        </div>
-
-
-        <!-- Bnner Extra -->
-        <div class="banner-extra">
-            <ul class="info-list">
-                <li><a href="#"><span class="icon fa fa-phone-volume"></span> +260770097375</a></li>
-                <li><a href="#"><span class="icon fa fa-envelope"></span> info@rehanhospital.com</a></li>
-                <li><span class="icon fa fa-map-marker-alt"></span> 10 Nkanchibiya Road, Lusaka, Zambia</li>
-            </ul>
-
-            <ul class="social-icon-five">
-                    <li><a href="https://www.facebook.com/profile.php?id=61561167188441"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="https://www.instagram.com/rehan_hospital/?hl=en"><i class="fab fa-instagram"></i></a></li>
-            </ul>
-        </div>
-       
-    </section>
-    <!--END Banner Section -->
-
-    <!-- About Section -->
-    <section class="about-section">
-        <div class="auto-container">
-            <div class="row">
-                <!-- Content Column -->
-                <div class="content-column col-lg-6 col-md-12 col-sm-12 order-2">
-                    <div class="inner-column">
-                        <div class="sec-title">
-                            <h2>Welcome to Rehan</h2>
-                            <h3 class="fs-5">we Care and Cure</h3>
-                            <p>At Rehan, we are dedicated to providing compassionate, high-quality healthcare with a patient-first approach. Our state-of-the-art facilities, expert medical professionals, and advanced treatment methods ensure that you receive the best care possible.</p>
-                        </div>
-                        <ul class="list-style-one">
-                            <li>Always Open</li>
-                            <li>Reporting & Analysis</li>
-                            <li>Specialist Doctor</li>
-                            <li>Technical Medical audit</li>
-                            <li>Ambulance Facility</li>
-                            <li>Health Certificates</li>
-                            <li>Laboratory Test</li>
-                            <li>Referral Services</li>
-                        </ul>
-                        
-                        
-                    </div>
-                </div>
-
-                <!-- Images Column -->
-                <div class="images-column col-lg-6 col-md-12 col-sm-12">
-                    <div class="inner-column">
-                        <figure class="image"><img src="images/resource/image-2.png" alt="" class="home-side-image" alt="Rehan Hospital - Expert Healthcare Services"></figure>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End About Section -->
-
-    <!-- Services Section -->
-    <section class="services-section" style="background-image: url(images/background/1.jpg);" alt="Rehan Hospital - Best Medical Care in Lusaka" loading="lazy">
-        <div class="container-fluid">
-            <div class="auto-container">
-                <div class="sec-title">
-                    <h2>Explore Our Caring & Premium <br>Medical Services</h2>
-                </div>
-            </div>
-
-            <div class="carousel-outer">
-                <div class="swiper-container services-carousel">
-                    <div class="swiper-wrapper">
-                        <!-- Service Block -->
-                        <div class="service-block-three swiper-slide">
-                            <div class="inner-box" style="height:420px;">
-                                <span class="icon"> <img width="80" height="80"style="color:008aff;" src="css/images/medicine.svg" alt="caduceus"></span>
-                                <h5><a href="General_medicine.html">General medicine</a></h5>
-                                <div class="text">Comprehensive care for diagnosing and treating a wide range of medical conditions.</div>
-                                <a href="General_medicine.html" class="read-more">Read More</a>
-                            </div>
-                        </div>
-
-                        <!-- Service Block -->
-                        <div class="service-block-three swiper-slide">
-                            <div class="inner-box" style="height:420px;">
-                                <span class="icon"><img width="80" height="80" src="css/images/generalsurgery.svg" alt="caduceus"></span>
-                                <h5><a href="General_surgery.html">General surgery</a></h5>
-                                <div class="text">Comprehensive surgical care for a wide range of medical conditions.</div>
-                                <a href="General_surgery.html" class="read-more">Read More</a>
-                            </div>
-                        </div>
-
-                        <!-- Service Block -->
-                        <div class="service-block-three swiper-slide">
-                            <div class="inner-box" style="height:420px;">
-                                <span class="icon"><img width="80" height="80" src="css/images/orthopedic.svg" alt="caduceus"></span>
-                                <h5><a href="Orthopedic.html">Orthopedic</a></h5>
-                                <div class="text">Expert care for bone, joint, and musculoskeletal conditions.</div>
-                                <a href="Orthopedic.html" class="read-more">Read More</a>
-                            </div>
-                        </div>
-
-                        <!-- Service Block -->
-                        <div class="service-block-three swiper-slide">
-                            <div class="inner-box" style="height:420px;">
-                                <span class="icon"><img width="80" height="80" src="css/images/neuron.svg" alt="caduceus"></span>
-                                <h5><a href="Neuro_surgery.html">Neuro surgery</a></h5>
-                                <div class="text">Advanced surgical care for brain, spine, and nervous system disorders.</div>
-                                <a href="Neuro_surgery.html" class="read-more">Read More</a>
-                            </div>
-                        </div>
-
-                        <!-- Service Block -->
-                        <div class="service-block-three swiper-slide">
-                            <div class="inner-box" style="height:420px;">
-                                <span class="icon"><img width="80" height="80" src="css/images/doctor.svg" alt="caduceus"></span>
-                                <h5><a href="ENT.html">ENT</a></h5>
-                                <div class="text">Comprehensive care for ear, nose, and throat disorders.</div>
-                                <a href="ENT.html" class="read-more">Read More</a>
-                            </div>
-                        </div>
-
-                        <!-- Service Block -->
-                        <div class="service-block-three swiper-slide">
-                            <div class="inner-box" style="height:420px;">
-                                <span class="icon"><img width="80" height="80" src="css/images/pregnant-woman.svg" alt="caduceus"></span>
-                                <h5><a href="Obstetric.html">Obstetric and Gynecology</a></h5>
-                                <div class="text">Expert care for women's health, pregnancy, and childbirth.</div>
-                                <a href="Obstetric.html" class="read-more">Read More</a>
-                            </div>
-                        </div>
-
-                        <!-- Service Block -->
-                        <div class="service-block-three swiper-slide">
-                            <div class="inner-box" style="height:420px;">
-                                <span class="icon"><img width="80" height="80" src="css/images/medical.svg" alt="caduceus"></span>
-                                <h5><a href="Dermatology.html">Dermatology</a></h5>
-                                <div class="text">Comprehensive care for skin, hair, and nail health.</div>
-                                <a href="Dermatology.html" class="read-more">Read More</a>
-                            </div>
-                        </div>
-
-                        <!-- Service Block -->
-                        <div class="service-block-three swiper-slide">
-                            <div class="inner-box" style="height:420px;">
-                                <span class="icon"><img width="80" height="80" src="css/images/uy.svg" alt="caduceus"></span>
-                                <h5><a href="Urology.html">Urology</a></h5>
-                                <div class="text">Expert care for urinary tract and male reproductive health.</div>
-                                <a href="Urology.html" class="read-more">Read More</a>
-                            </div>
-                        </div>
-
-                        <!-- Service Block -->
-                        <div class="service-block-three swiper-slide">
-                            <div class="inner-box" style="height:420px;">
-                                <span class="icon"><img width="80" height="80" src="css/images/laboratory.svg" alt="caduceus"></span>
-                                <h5><a href="Medical_laboratories.html">Medical laboratories</a></h5>
-                                <div class="text">Providing accurate and reliable diagnostic testing for better healthcare outcomes.</div>
-                                <a href="Medical_laboratories.html" class="read-more">Read More</a>
-                            </div>
-                        </div>
-
-                        <!-- Service Block -->
-                        <div class="service-block-three swiper-slide">
-                            <div class="inner-box" style="height:420px;">
-                                <span class="icon"><img width="80" height="80" src="css/images/arm.svg" alt="caduceus"></span>
-                                <h5><a href="Aesthetics.html">Aesthetics/ Iv hydration Therapy</a></h5>
-                                <div class="text">Enhancing beauty and wellness with advanced aesthetic treatments and IV hydration therapy.</div>
-                                <a href="Aesthetics.html" class="read-more">Read More</a>
-                            </div>
-                        </div>
-
-                        <!-- Service Block -->
-                        <div class="service-block-three swiper-slide">
-                            <div class="inner-box" style="height:420px;">
-                                <span class="icon"><img width="80" height="80" src="css/images/examination.svg" alt="caduceus"></span>
-                                <h5><a href="Daibetic.html">Endocrine, Daibetic and hypertension</a></h5>
-                                <div class="text"> specialist care focuses on managing hormone imbalances, blood sugar levels, and high blood pressure.</div>
-                                <a href="Daibetic.html" class="read-more">Read More</a>
-                            </div>
-                        </div>
-
-                        <!-- Service Block -->
-                        <div class="service-block-three swiper-slide">
-                            <div class="inner-box" style="height:420px;">
-                                <span class="icon"><img width="80" height="80" src="css/images/pharmacy.svg" alt="caduceus"></span>
-                                <h5><a href="Pharmacy.html">Pharmacy</a></h5>
-                                <div class="text">Providing a wide range of medications with expert guidance for safe and effective treatment.</div>
-                                <a href="Pharmacy.html" class="read-more mt-5">Read More</a>
-                            </div>
-                        </div>
-                           <!-- Service Block -->
-                           <div class="service-block-three swiper-slide">
-                            <div class="inner-box" style="height:420px;">
-                                <span class="icon"><img width="80" height="80" src="css/images/sonographer.svg" alt="caduceus"></span>
-                                <h5><a href="Sonography.html">Sonography</a></h5>
-                                <div class="text">Advanced imaging technology for precise and non-invasive diagnostics.</div>
-                                <a href="Sonography.html" class="read-more">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Services Pagination -->
-                <div class="services-pagination">
-                    <div class="service-prev"><span class="fa fa-angle-left"></span></div>
-                    <div class="service-next"><span class="fa fa-angle-right"></span></div>
-                </div>
-            </div>
-
-
-            <div class="auto-container">
-                <div class="bottom-box">
-                    <div class="title-box">
-                        <h3>True Healthcare For Your Family!</h3>
-                        <p>Serve the community by improving the quality of life through better health. </p>
-                    </div>
-                    <div class="btn-box">
-                        <a href="services.html" class="theme-btn btn-style-one view-alll"><span class="btn-title">View All Service</span></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--End Services Section -->
-
-    <!-- Fun Fact Section -->
-    <div class="fun-fact-section">
-        <div class="auto-container">
-            <div class="outer-box pull-up">
-                <div class="row">
-                    <!--Column-->
-                    <div class="counter-column col-lg-3 col-md-6 col-sm-12 wow fadeInUp">
-                        <div class="count-box"><span class="count-text" data-speed="3000" data-stop="40">0</span>+</div>
-                        <h4 class="counter-title">Patients Beds</h4>
-                    </div>
-
-
-                    <!--Column-->
-                    <div class="counter-column col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
-                        <div class="count-box"><span class="count-text" data-speed="3000" data-stop="5000">0</span>+</div>
-                        <h4 class="counter-title">Happy Patients</h4>
-                    </div>
-
-
-                    <!--Column-->
-                    <div class="counter-column col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="800ms">
-                        <div class="count-box"><span class="count-text" data-speed="3000" data-stop="50">0</span>+</div>
-                        <h4 class="counter-title">Doctors & Nurse</h4>
-                    </div>
-
-                    <!--Column-->
-                    <div class="counter-column col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="1200ms">
-                        <div class="count-box"><span class="count-text" data-speed="3000" data-stop="18">0</span>+</div>
-                        <h4 class="counter-title">Year Experience</h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Fun Fact Section -->
-
-    <!-- Skills and Testimonials -->
-    <section class="skills-and-testimonials">
-        <div class="auto-container">
-            <div class="row">
-                <!-- Skills Column -->
-                <div class="skills-column col-lg-6 col-md-12 col-sm-12">
-                    <div class="skills">
-                        <!-- Sec Title -->
-                        <div class="sec-title">
-                            <h2>Inspiring Stories! <br>And Skills</h2>
-                            <h4>We have 25 Years of Experience</h4>
-                        </div>
-
-                        <!--Skill Item-->
-                        <div class="skill-item">
-                            <div class="skill-header">
-                                <div class="skill-title">Medical Private</div>
-                                <div class="skill-percentage"><div class="count-box"><span class="count-text" data-speed="3000" data-stop="80">0</span>%</div></div>
-                            </div>
-                            <div class="skill-bar"><div class="bar-inner"><div class="bar progress-line" data-width="80"></div></div></div>
-                        </div>
-
-                        <!--Skill Item-->
-                        <div class="skill-item">
-                            <div class="skill-header">
-                                <div class="skill-title">Patients Served</div>
-                                <div class="skill-percentage"><div class="count-box"><span class="count-text" data-speed="3000" data-stop="85">0</span>%</div></div>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="bar-inner"><div class="bar progress-line" data-width="85"></div></div>
-                            </div>
-                        </div>
-
-                        <!--Skill Item-->
-                        <div class="skill-item">
-                            <div class="skill-header">
-                                <div class="skill-title">Satisfied Patients</div>
-                                <div class="skill-percentage"><div class="count-box"><span class="count-text" data-speed="3000" data-stop="90">0</span>%</div></div>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="bar-inner"><div class="bar progress-line" data-width="90"></div></div>
-                            </div>
-                        </div>
-                    </div>
-                </div> 
-
-                <!-- Testimonial -->
-                <div class="testimonial-column col-lg-6 col-md-12 col-sm-12">
-                    <div class="testimonials">
-
-                        <!-- Swiper -->
-                        <div class="swiper-container testimonial-content">
-                            <div class="swiper-wrapper">
-                               <!-- Testimonial Block -->
-                               <div class="testimonial-block swiper-slide">
-                                <div class="inner-box">
-                                    <div class="text">“The treatment and care I received were outstanding. I highly recommend this hospital!”</div>
-                                </div>
-                            </div>
-
-                            <!-- Testimonial Block -->
-                            <div class="testimonial-block swiper-slide">
-                                <div class="inner-box">
-                                    <div class="text">“The doctors and staff were incredibly kind and professional. The facilities are top-notch!”</div>
-                                </div>
-                            </div>
-
-                            <!-- Testimonial Block -->
-                            <div class="testimonial-block swiper-slide">
-                                <div class="inner-box">
-                                    <div class="text">“A wonderful hospital with expert doctors and advanced medical facilities. Excellent experience!"</div>
-                                </div>
-                            </div>
-                            </div>
-
-                         
-                        <!-- Testimonial Thumbs -->
-                        <div class="swiper-container testimonial-thumbs">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide testimonial-thumb">
-                                    <figure class="image"><img src="images/resource/user-icon.jpg" alt=""></figure>
-                                    <h4 class="name">Kwame</h4>
-                                    <span class="designation">Patient</span>
-                                </div>
-
-                                <div class="swiper-slide testimonial-thumb">
-                                    <figure class="image"><img src="images/resource/user-icon.jpg" alt=""></figure>
-                                    <h4 class="name">Zainab</h4>
-                                    <span class="designation">Patient</span>
-                                </div>
-
-                                <div class="swiper-slide testimonial-thumb">
-                                    <figure class="image"><img src="images/resource/user-icon.jpg" alt=""></figure>
-                                    <h4 class="name">Thabo</h4>
-                                    <span class="designation">Patient</span>
-                                </div>
-                            </div>
-                        </div>
-
-                           <!-- Add Pagination -->
-                           <div class="testimonial-pagination"></div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Skills and Testimonials -->
-
-
-
-
-
-    <!-- Team Section Two -->
-    <section class="team-section">
-        <div class="auto-container">
-            <div class="sec-title text-center">
-                <h2>Meet our Dedicated <br>Doctor’s Team</h2>
-            </div>
-
-            <div class="row">
-                  <!-- Team Block -->
-                  <div class="team-block col-lg-3 col-md-6 col-sm-12">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><a href="mohit-sharma.html"><img src="images/doctor/mohit-sharma.jpeg" alt="" style="border-radius: 15px;"></a></figure>                          
-                        </div>
-                        <div class="info-box">
-                            <span class="designation">Head & Professor</span>
-                            <h5 class="name"><a href="mohit-sharma.html">Dr. Mohit-Sharma</a></h5>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Team Block -->
-                <div class="team-block col-lg-3 col-md-6 col-sm-12">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><a href="Saleem-Naik.html"><img src="images/doctor/saleem-naik.jpeg" alt=""  style="border-radius: 15px;"></a></figure>
-                        </div>
-                        <div class="info-box">
-                            <span class="designation">Senior Consultant </span>
-                            <h5 class="name"><a href="Saleem-Naik.html">Dr. Saleem Naik</a></h5>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-        </div>
-    </section>
-    <!--End Team Section -->
-
+        </section>
+<!-- Button trigger modal -->
 
   
-        <!-- Main Footer -->
-        <footer class="main-footer style-four">
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel"> Contact Form</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form action="">
+                <div class="form-group">
+                 <label for="name">Full Name :</label>
+                 <input type="text" class="form-control" name="name">
+               </div>
+               <div class="form-group">
+                 <label for="phone">Phone Number:</label>
+                 <input type="text" class="form-control" name="phone">
+               </div>
+               <div class="form-group">
+                 <label for="email">Email address :</label>
+                 <input type="email" class="form-control" name="email">
+               </div>
+               <div class="form-group">
+                 <label for="address">Address :</label>
+                 <input type="text" class="form-control" name="address">
+               </div>   
+     
+               <div class="text-center mt-3">
+                <button type="submit" class="btn rounded-0 btn-accent-dark text-white text-center">Submit</button>
+               </div>
+            </form>
+        </div>
 
-           
-            <!--Widgets Section-->
-            <div class="widgets-section">
-                <div class="auto-container">
-                    <div class="row">
-
-                        <!-- Left Column -->
-                        <div class="col-xl-4 col-lg-6 col-md-12">
-                            <div class="footer-widget">
-                                <div class="logo">
-                                    <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+      </div>
+    </div>
+  </div>
+        <section class="section">
+            <div class="r-container">
+                <div class="row row-cols-1 row-cols-lg-2">
+                    <div class="col mb-0">
+                        <div class="d-flex flex-column gap-3">
+                            <h5 class="accent-color font-1 fw-semibold"> OUR DESIGN PHILOSOPHY</h5>
+                            <!--<h3 class="text-black font-2 fw-semibold">WE DESIGN FOR YOUR SATISFACTION</h3>
+                            <p class="text-gray font-1">
+                                In hac habitasse platea dictumst. Aliquam fringilla est ut vulputate sollicitudin. Fusce
+                                fringilla feugiat ipsum, nec rhoncus sapien dictum sed. Phasellus quis libero elit.
+                            </p>-->
+                            <div class="d-flex flex-column">
+                                <div class="d-flex flex-row gap-3 align-items-center border-bottom py-3">
+                                    <h3 class="accent-color font-1 ps-4">01</h3>
+                                    <div class="d-flex flex-column ps-5">
+                                        <h6 class="text-black font-1">Timeless Elegance</h6>
+                                        <p class="text-gray-philosophy">
+                                            Our designs embrace the essence of timeless elegance, ensuring that each
+                                            space we craft stands the test of time, reflecting enduring beauty and
+                                            sophistication.
+                                        </p>
+                                    </div>
                                 </div>
-                                <p>Our goal is to deliver quality of care in a courteous, respectful, and compassionate manner. We strive to be the best choice for your family healthcare.</p>
-                            </div>
-                        </div>
-        
-                        <!-- Middle Column (Opening Hours) -->
-                        <div class="col-xl-4 col-lg-6 col-md-12">
-                            <div class="footer-widget">
-                                <h2>Quick Links</h2>
-                                <ul class="footer-links">
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="about.html">About Us</a></li>
-                                    <li><a href="services.html">service</a></li>
-                                    <li><a href="doctors.html">Doctors</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
-                                </ul>
-                                <div class="social-icon-one">
-                                    <a href="https://www.facebook.com/profile.php?id=61561167188441"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="https://www.instagram.com/rehan_hospital/?hl=en"><i class="fab fa-instagram"></i></a>
+                                <div class="d-flex flex-row gap-3 align-items-center border-bottom py-3">
+                                    <h3 class="accent-color font-1 ps-4">02</h3>
+                                    <div class="d-flex flex-column ps-5">
+                                        <h6 class="text-black font-1">Functionality with Flair</h6>
+                                        <p class="text-gray-philosophy">
+                                            Balancing aesthetics and functionality, we believe in creating spaces that
+                                            not only look stunning but also cater to the practical needs of those who
+                                            inhabit them.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-row gap-3 align-items-center border-bottom py-3">
+                                    <h3 class="accent-color font-1 ps-4">03</h3>
+                                    <div class="d-flex flex-column ps-5">
+                                        <h6 class="text-black font-1">Innovative Creativity</h6>
+                                        <p class="text-gray-philosophy">
+                                            NOOFAH ARCHITECTS is synonymous with innovative creativity. Our designers
+                                            push the boundaries, introducing fresh perspectives and groundbreaking ideas
+                                            into every project.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-row gap-3 align-items-center border-bottom py-3">
+                                    <h3 class="accent-color font-1 ps-4">04</h3>
+                                    <div class="d-flex flex-column ps-5">
+                                        <h6 class="text-black font-1">Transparent Communication</h6>
+                                        <p class="text-gray-philosophy">
+                                            We maintain transparent communication throughout the design journey,
+                                            fostering trust and understanding between our team and clients.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-        
-                        <!-- Right Column (Get In Touch) -->
-                        <div class="col-xl-4 col-lg-6 col-md-12">
-                            <div class="footer-widget">
-                                <h2>Get In Touch</h2>
-                                <ul class="contact-list">
-                                    <li>
-                                        <span class="icon fas fa-map-marker-alt"></span>
-                                        10 Nkanchibiya Road, Lusaka, Zambia
-                                    </li>
-                                    <li>
-                                        <span class="icon fas fa-phone-volume"></span>
-                                        <a href="tel:+260770097375">+260770097375</a>
-                                    </li>                                                                                    
-                                    <li>
-                                        <span class="icon fas fa-envelope"></span>
-                                        <a href="mailto:info@hospital.com">info@rehanhospital.com</a>
-                                    </li>
-                                </ul>
+                    </div>
+                    <div class="col mb-3">
+                        <div class="row row-cols-1 row-cols-lg-2">
+                            <div class="col mt-lg-5 mb-3">
+                                <div class="d-flex flex-column gap-3">
+                                    <a href="residential.html">
+                                        <div class="card bg-transparent">
+                                            <img src="image/ourdesign/1.jpg" class="img-fluid" alt="...">
+                                            <div class="card-body shadow text-center p-4">
+                                                <h5 class="accent-color ">RESIDENTIAL</h5>
+                                                <p class="text-gray font-2">Upgrade your living with  NOOFAH ARCHITECTS.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <a href="commercial.html">
+                                        <div class="card bg-transparent">
+                                            <img src="image/ourdesign/2.jpg" class="img-fluid" alt="...">
+                                            <div class="card-body shadow text-center p-4">
+                                                <h5 class="accent-color ">COMMERCIAL</h5>
+                                                <p class="text-gray font-2">Upgrade your business space with our
+                                                    commercial designs.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                </div>
+                            </div>
+                            <div class="col mb-3">
+                                <div class="d-flex flex-column gap-3">
+                                    <a href="product-design.html">
+                                        <div class="card bg-transparent">
+                                            <img src="image/ourdesign/2.jpg" class="img-fluid" alt="...">
+                                            <div class="card-body shadow text-center p-4">
+                                                <h5 class="accent-color">PRODUCT DESIGN</h5>
+                                                <p class="text-gray font-2">innovative product designs that redefine
+                                                    excellence.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <a href="design-research.html">
+                                        <div class="card bg-transparent">
+                                            <img src="image/ourdesign/4.jpg" class="img-fluid" alt="...">
+                                            <div class="card-body shadow text-center p-4">
+                                                <h5 class="accent-color ">DESIGN RESEARCH</h5>
+                                                <p class="text-gray font-2">Explore new horizons through our thoughtful
+                                                    design research.
+
+
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                    </a>
+
+                                </div>
                             </div>
                         </div>
-
-        
                     </div>
                 </div>
             </div>
-    
-
-        <!--Footer Bottom-->
-        <div class="footer-bottom">
-            <!-- Scroll To Top -->
-            <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-up"></span></div>
-            
-            <div class="auto-container">
-                <div class="inner-container">
-                     <div class="copyright-text">
-                        <p>© <a href="https://nearlooks.com/">Nearlooks</a> 2025 | All Rights Reserved</p>
+        </section>
+        <!--<section class="section">
+            <div class="r-container">
+                <div class="row row-cols-1 row-cols-lg-2">
+                    <div class="col mb-3">
+                        <div class="row row-cols-1 row-cols-lg-2">
+                            <div class="col mt-lg-5 mb-3">
+                                <div class="d-flex flex-column gap-3">
+                                    <div class="card bg-transparent">
+                                        <img src="image/image-600x400-1.jpg" class="img-fluid" alt="...">
+                                        <div class="card-body shadow text-center p-4">
+                                            <h5 class="accent-color font-1">RESIDENTIAL</h5>
+                                            <p class="text-gray font-2">Fusce at tellus nec erat pretium maximus eu et
+                                                eros.</p>
+                                        </div>
+                                    </div>
+                                    <div class="card bg-transparent">
+                                        <img src="image/image-600x400-2.jpg" class="img-fluid" alt="...">
+                                        <div class="card-body shadow text-center p-4">
+                                            <h5 class="accent-color font-1">COMMERCIAL</h5>
+                                            <p class="text-gray font-2">Etiam dictum pellentesque libero a porttitor.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col mb-3">
+                                <div class="d-flex flex-column gap-3">
+                                    <div class="card bg-transparent">
+                                        <img src="image/image-600x400-3.jpg" class="img-fluid" alt="...">
+                                        <div class="card-body shadow text-center p-4">
+                                            <h5 class="accent-color font-1">PRODUCT DESIGN</h5>
+                                            <p class="text-gray font-2">Vestibulum porttitor in massa feugiat blandit.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="card bg-transparent">
+                                        <img src="image/image-600x400-4.jpg" class="img-fluid" alt="...">
+                                        <div class="card-body shadow text-center p-4">
+                                            <h5 class="accent-color font-1">DESIGN RESEARCH</h5>
+                                            <p class="text-gray font-2">Proin eget elit sed felis finibus lobortis nec
+                                                ipsum.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    <div class="col mb-3">
+                        <div class="d-flex flex-column gap-3">
+                            <h5 class="accent-color font-1 fw-semibold"> OUR DESIGN PHILOSOPHY</h5>
+                            <h3 class="text-black font-2 fw-semibold">WE DESIGN FOR YOUR SATISFACTION</h3>
+                            <p class="text-gray font-1">
+                                In hac habitasse platea dictumst. Aliquam fringilla est ut vulputate sollicitudin. Fusce
+                                fringilla feugiat ipsum, nec rhoncus sapien dictum sed. Phasellus quis libero elit.
+                            </p>
+                            <div class="d-flex flex-column">
+                                <div class="d-flex flex-row gap-3 align-items-center border-bottom py-3">
+                                    <h3 class="accent-color font-1">01</h3>
+                                    <div class="d-flex flex-column ps-5">
+                                        <h6 class="text-black font-1">Timeless Elegance</h6>
+                                        <p class="text-gray">
+                                            Our designs embrace the essence of timeless elegance, ensuring that each space we craft stands the test of time, reflecting enduring beauty and sophistication.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-row gap-3 align-items-center border-bottom py-3">
+                                    <h3 class="accent-color font-1">02</h3>
+                                    <div class="d-flex flex-column ps-5">
+                                        <h6 class="text-black font-1">Functionality with Flair</h6>
+                                        <p class="text-gray">
+                                            Balancing aesthetics and functionality, we believe in creating spaces that not only look stunning but also cater to the practical needs of those who inhabit them.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-row gap-3 align-items-center border-bottom py-3">
+                                    <h3 class="accent-color font-1">03</h3>
+                                    <div class="d-flex flex-column ps-5">
+                                        <h6 class="text-black font-1">Innovative Creativity</h6>
+                                        <p class="text-gray">
+                                            Luxeliving Interiors is synonymous with innovative creativity. Our designers push the boundaries, introducing fresh perspectives and groundbreaking ideas into every project.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-row gap-3 align-items-center border-bottom py-3">
+                                    <h3 class="accent-color font-1">04</h3>
+                                    <div class="d-flex flex-column ps-5">
+                                        <h6 class="text-black font-1">Transparent Communication</h6>
+                                        <p class="text-gray">
+                                            We maintain transparent communication throughout the design journey, fostering trust and understanding between our team and clients.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>-->
+        <section class="section background-3">
+            <div class="r-container">
+                <div class="row row-cols-1 row-cols-lg-2">
+                    <div class="col mb-3">
+                        <div class="d-flex flex-column gap-3">
+                            <h6 class="accent-color font-1 fw-semibold text-center">OUR TESTIMONIAL</h6>
+                            <h4 class="text-black font-2 fw-semibold">WHAT OUR CLIENTS SAY ?</h4>
+                            <p class="text-gray font-1 text-center">
+                                NOOFAH ARCHITECTS! Exceptional service, innovative designs, and a team that goes
+                                above and beyond. Experience the difference
+                            </p>
+                            <div class="w-100 overflow-hidden">
+                                <!-- Slider main container -->
+                                <div class="swiper">
+                                    <!-- Additional required wrapper -->
+                                    <div class="swiper-wrapper">
+                                        <!-- Slides -->
+                                        <div class="swiper-slide">
+                                            <div class="bg-white p-5">
+                                                <div class="row">
+                                                    <div class="col mb-3">
+                                                        <div class="d-flex flex-column justify-content-center h-100">
+                                                            <p class="text-gray font-2">
+                                                                " Working with NOOFAH ARCHITECTS was a game-changer!
+                                                                Their team's creativity and attention to detail
+                                                                transformed our space into a true masterpiece. "
+                                                            </p>
+                                                            <div class="divider mb-4"></div>
+                                                            <div class="d-flex flex-column">
+                                                                <h5 class="lh-1 m-0">Sarath D.</h5>
+                                                                <!--<span class="text-gray">Desination</span>-->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col mb-3">
+                                                        <img src="image/review/1.jpg" alt="" class="img-fluid">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="bg-white p-5">
+                                                <div class="row">
+                                                    <div class="col mb-3">
+                                                        <div class="d-flex flex-column justify-content-center h-100">
+                                                            <p class="text-gray font-2">
+                                                                " NOOFAH ARCHITECTS exceeded our expectations. The
+                                                                blend of modern design and timeless elegance truly
+                                                                reflects their commitment to excellence. "
+                                                            </p>
+                                                            <div class="divider mb-4"></div>
+                                                            <div class="d-flex flex-column">
+                                                                <h5 class="lh-1 m-0">Hema T.</h5>
 
-                    <div class="footer-nav">
-                        <ul class="clearfix">
-                           
-                           <li><a href="Terms_Condition.html">Terms & Condition</a></li>  
-                           <li><a href="privacy_policy.html">Privacy Policy</a></li>  
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col mb-3">
+                                                        <img src="image/review/1.jpg" alt="" class="img-fluid">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="bg-white p-5">
+                                                <div class="row">
+                                                    <div class="col mb-3">
+                                                        <div class="d-flex flex-column justify-content-center h-100">
+                                                            <p class="text-gray font-2">
+                                                                " The entire process, from concept to completion, was
+                                                                seamless. NOOFAH ARCHITECTSturned our vision into
+                                                                reality, creating a home that feels uniquely ours. "
+                                                            </p>
+                                                            <div class="divider mb-4"></div>
+                                                            <div class="d-flex flex-column">
+                                                                <h5 class="lh-1 m-0"> Guna G.</h5>
 
-                        </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col mb-3">
+                                                        <img src="image/review/1.jpg" alt="" class="img-fluid">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        ...
+                                    </div>
+                                    <!-- If we need pagination -->
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-3">
+                        <div class="d-flex flex-column gap-3">
+                            <div class="w-100 overflow-hidden">
+                                <!-- Slider main container -->
+                                <div class="swiper">
+                                    <!-- Additional required wrapper -->
+                                    <div class="swiper-wrapper">
+                                        <!-- Slides -->
+                                        <div class="swiper-slide">
+                                            <div class="bg-white p-5">
+                                                <div class="row">
+                                                    <div class="col mb-3">
+                                                        <div class="d-flex flex-column justify-content-center h-100">
+                                                            <p class="text-gray font-2">
+                                                                "NOOFAH ARCHITECTS surpassed all expectations! Their
+                                                                innovative designs and meticulous attention to detail
+                                                                turned our house into a stylish haven. Truly
+                                                                exceptional!"
+                                                            </p>
+                                                            <div class="divider mb-4"></div>
+                                                            <div class="d-flex flex-column">
+                                                                <h5 class="lh-1 m-0"> Bala M.</h5>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col mb-3">
+                                                        <img src="image/review/1.jpg" alt="" class="img-fluid">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="bg-white p-5">
+                                                <div class="row">
+                                                    <div class="col mb-3">
+                                                        <div class="d-flex flex-column justify-content-center h-100">
+                                                            <p class="text-gray font-2">
+                                                                " Choosing NOOFAH ARCHITECTS was the best decision
+                                                                for our home transformation. The team's creativity and
+                                                                dedication resulted in a space that perfectly aligns
+                                                                with our lifestyle. "
+                                                            </p>
+                                                            <div class="divider mb-4"></div>
+                                                            <div class="d-flex flex-column">
+                                                                <h5 class="lh-1 m-0"> Ram R.</h5>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col mb-3">
+                                                        <img src="image/review/1.jpg" alt="" class="img-fluid">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="bg-white p-5">
+                                                <div class="row">
+                                                    <div class="col mb-3">
+                                                        <div class="d-flex flex-column justify-content-center h-100">
+                                                            <p class="text-gray font-2">
+                                                                " I am beyond impressed with NOOFAH ARCHITECTS. The
+                                                                quality of their work, combined with a seamless process,
+                                                                made our project stress-free. NOOFAH ARCHITECTS is
+                                                                the epitome of excellence! "
+                                                            </p>
+                                                            <div class="divider mb-4"></div>
+                                                            <div class="d-flex flex-column">
+                                                                <h5 class="lh-1 m-0"> David L.</h5>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col mb-3">
+                                                        <img src="image/review/1.jpg" alt="" class="img-fluid">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        ...
+                                    </div>
+                                    <!-- If we need pagination -->
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column gap-3">                               
+                                <p class="text-gray text-center ">
+                                    At NOOFAH ARCHITECTS, we take immense pride in our collaborations with a diverse
+                                    range of clients. Their trust in our expertise has allowed us to create exceptional
+                                    living spaces.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        </div>
+        </section>
+
+        <section class="section  pt-0">
+            <div class="r-container">
+                <div class="row row-cols-1 row-cols-lg-2">
+                   
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <section class="section footer-bg py-5">
+            <div class="r-container">
+                <div class="row row-cols-1 row-cols-lg-2">
+                    <div class="col mb-3">
+                        <div class="d-flex flex-column gap-3">
+                            <div class="logo-container">
+                                <img src="image/noofah logo.jpeg" alt="" class="img-fluid" width="80">
+                            </div>
+                            <p class="text-gray">
+                                Welcome to Noofah Architects, where innovation meets excellence in architectural design. 
+                                We specialize in crafting visionary spaces that blend aesthetics with functionality, 
+                                ensuring every structure tells a unique story. From concept to completion, our expertise 
+                                transforms ideas into architectural masterpieces.
+                            </p>
+                            
+                        </div>
+                    </div>
+                    <div class="col mb-3">
+                        <div class="row row-cols-1 row-cols-lg-2">
+                            <div class="col col-lg-5 mb-3">
+                                <h6 class="accent-color font-1 mb-3">OTHER PAGES</h6>
+                                <div class="d-flex flex-column gap-2 font-1">
+                                    <a href="privacy_policy.html"
+                                        class="d-flex flex-row gap-4 align-items-center link"><i
+                                            class="fa-solid fa-plus"></i> Privacy Policy</a>
+                                    <a href="terms_of_service.html"
+                                        class="d-flex flex-row gap-4 align-items-center link"><i
+                                            class="fa-solid fa-plus"></i> Term of Service</a>
+                                    <a href="faq.html" class="d-flex flex-row gap-4 align-items-center link"><i
+                                            class="fa-solid fa-plus"></i> FAQ</a>
+                                </div>
+                            </div>
+                            <div class="col col-lg-7 mb-3">
+                                <div class="d-flex flex-column gap-3">
+                                    <div class="w-100 overflow-hidden">
+                                        <!-- Slider main container -->
+                                        <div class="swiper-footer-1">
+                                            <!-- Additional required wrapper -->
+                                            <div class="swiper-wrapper">
+                                                <!-- Slides -->
+                                                <div class="swiper-slide"><img src="image/ourdesign/1.jpg" alt=""
+                                                        class="img-fluid"></div>
+                                                <div class="swiper-slide"><img src="image/ourdesign/2.jpg" alt=""
+                                                        class="img-fluid"></div>
+                                                <div class="swiper-slide"><img src="image/ourdesign/3.jpg" alt=""
+                                                        class="img-fluid"></div>
+                                                <div class="swiper-slide"><img src="image/ourdesign/4.jpg" alt=""
+                                                        class="img-fluid"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="w-100 overflow-hidden">
+                                        <!-- Slider main container -->
+                                        <div class="swiper-footer-2">
+                                            <!-- Additional required wrapper -->
+                                            <div class="swiper-wrapper">
+                                                <!-- Slides -->
+                                                <div class="swiper-slide"><img src="image/ourdesign/5.jpg" alt=""
+                                                        class="img-fluid"></div>
+                                                <div class="swiper-slide"><img src="image/ourdesign/6.jpg" alt=""
+                                                        class="img-fluid"></div>
+                                                <div class="swiper-slide"><img src="image/ourdesign/7.jpg" alt=""
+                                                        class="img-fluid"></div>
+                                                <div class="swiper-slide"><img src="image/ourdesign/8.jpg" alt=""
+                                                        class="img-fluid"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section class="bg-dark-color py-4">
+            <div class="r-container">
+                <div
+                    class="d-flex flex-lg-row flex-column justify-content-center text-center justify-content-between gap-3">
+                    <span class="text-white">
+                        <p>Copyright &copy; <a class="text-white" href="https://nearlooks.com/">Nearlook</a>. All rights
+                            reserved.</p>
+                    </span>
+                    <div class="d-flex justify-content-center flex-row gap-3">
+                        <a href="#" class="accent-color"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.instagram.com/luxelivingconcepts?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D
+                        " class="accent-color"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="accent-color"><i class="bi bi-youtube"></i></a>
+                        <a href="#" class="accent-color"><i class="bi bi-twitter-x"></i></a>
+                        <!--<a href="#top" class="text-white"><i class="fa-solid fa-arrow-up"></i></a>-->
+                    </div>
+                </div>
+            </div>
+        </section>
     </footer>
-    <!--End Main Footer -->
-</div>
 
 
+    <!--Scroll to top-->
+    <a id="scrollUp" href="#top" style="position: fixed; z-index: 2147483647;"><i class="fa-solid fa-arrow-up"
+            style="margin-top: 18px;"></i></a>
 
-<script src="js/jquery.js"></script> 
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.fancybox.js"></script>
-<script src="js/wow.js"></script>
-<script src="js/appear.js"></script>
-<script src="js/swiper.min.js"></script>
-<script src="js/mixitup.js"></script>
-<script src="js/script.js"></script>
-
-<!-- Color Setting -->
-<script src="js/color-settings.js"></script>
-
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-    var openButtons = document.querySelectorAll("#openForm"); // Select all buttons
-    var modal = document.getElementById("popupForm");
-    var closeBtn = document.querySelector(".close");
-
-    openButtons.forEach(function (btn) {
-        btn.addEventListener("click", function () {
-            modal.style.display = "block";
-        });
-    });
-
-    closeBtn.addEventListener("click", function () {
-        modal.style.display = "none";
-    });
-
-    window.addEventListener("click", function (event) {
-        if (event.target === modal) {
-            modal.style.display = "none";
-        }
-    });
-});
-
-</script>
-
-<script>
- window.onload = function () {
-    setTimeout(openPopup, 2000); // Open popup after 5 seconds (5000ms)
-};
-
-function openPopup() {
-    document.getElementById("popup").style.display = "block";
-    document.getElementById("overlay").style.display = "block";
-}
-
-function closePopup() {
-    document.getElementById("popup").style.display = "none";
-    document.getElementById("overlay").style.display = "none";
-}
-</script>
-
-
-
-</script>
-
+    <script src="js/vendor/fslightbox.js"></script>
 </body>
+
+
 
 </html>
