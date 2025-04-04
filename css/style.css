@@ -1364,11 +1364,18 @@ img{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	border: 2px solid #008aff;
+
 	background: #ffffff;
 	padding: 0 10px;
+	border-radius: 25px;
 }
 
+@media (min-width: 768px) {
+	.main-header .main-box{
+		border: 2px solid #008aff;
+
+	}
+}
 .main-header .logo-outer{
 	position: relative;
 	padding: 9px 0;
@@ -1390,8 +1397,7 @@ img{
 	left: 0;
 	bottom: -10px;
 	left: 10px;
-	height: 100%;
-	width: 100%;
+
 	background-image: url(../images/icons/pattern-1.png);
 	background-repeat: no-repeat;
 	background-position: center;
@@ -1400,7 +1406,12 @@ img{
 	content: "";
 }
 
-
+@media (min-width: 768px) {
+	.main-header .main-box:after{
+		height: 100%;
+		width: 100%;
+	}
+}
 /*** 
 
 ====================================================================
