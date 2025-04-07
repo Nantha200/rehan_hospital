@@ -1553,6 +1553,10 @@ pre code {
     }
 }
 
+@media (min-width:1090px) {
+
+
+}
 @media (min-width:1200px) {
     .col-xl {
         -ms-flex-preferred-size: 0;

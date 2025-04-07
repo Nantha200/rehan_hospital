@@ -438,9 +438,7 @@
 		line-height: 20px;
 	}
 	
-	.sidebar-page-container .content-side{
-		order: 0;
-	}
+	
 
 	.department-hours .timing-list{
 		padding-right: 0;
@@ -456,8 +454,11 @@
 	}
 
 }
-
-
+@media only screen and (max-width:991px){
+.sidebar-page-container .content-side{
+	order: 0;
+}
+}
 @media only screen and (max-width: 767px){
 
 	.banner-section .image-box .image img{
