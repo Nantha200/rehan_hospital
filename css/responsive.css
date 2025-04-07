@@ -1,5 +1,5 @@
 /* Meditab | Auto Repair HTML Template  */
-@media only screen and (min-width: 1024px){
+@media only screen and (min-width: 1078px){
 
 .main-header .outer-box .appointment-btn .mobile-only{
 	display: none;
@@ -157,7 +157,7 @@
 }
 
 
-@media only screen and (max-width: 1023px){
+@media only screen and (max-width: 1077px){
 	.sticky-header{
 		display: none !important;
 	}
@@ -1267,7 +1267,7 @@
 }
 
 
-@media only screen and (max-width: 1023px){
+@media only screen and (max-width: 1077px){
 	.rtl .main-header .cart-btn{
 		margin-right: 0;
 	}
@@ -1686,7 +1686,7 @@
 	}
 
 }
-@media only screen and (max-width: 1023px){
+@media only screen and (max-width: 1077px){
 	.main-header .appointment-btn .mobile-only {
         margin-left: 80%;
     }
