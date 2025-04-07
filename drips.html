@@ -20,6 +20,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
 <style>
+
 .image-gallery {
     display: flex;
     flex-wrap: wrap;
@@ -77,7 +78,7 @@
 }
 
 p {
-    text-align: justify;
+    text-align: center;
 
     word-spacing: -1px;
     font-family: sans-serif;
@@ -233,7 +234,29 @@ h4 {
 .gallery-item:hover img {
     transform: scale(1.2);
 }
-        
+ 
+.system-only{
+background-color: #0275d8; color: #fff; padding: 12px 20px; border: none; border-radius: 6px; font-size: 16px; cursor: pointer;
+}
+
+.w-2{
+    margin-top: 25px; text-align: center;
+}
+
+
+.drip-service {
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #f8f9fa;
+}
+
+.drip-service p {
+  font-size: 16px;
+  color: #000000;
+}
+
+
 
 </style>
 
@@ -328,7 +351,7 @@ h4 {
         </div>
         <!-- End Header Lower -->
         <div id="popupForm" class="modal">
-            <div class="modal-content">
+            <div class="modal-content"  style="margin-top:60px;">
                 <span class="close">&times;</span>
                 <h2>Appointment</h2>
                 <form id="loginForm">
@@ -453,47 +476,21 @@ h4 {
               
 
                 <!--Sidebar Side-->
-                <div class="sidebar-side col-lg-4 col-md-12 col-sm-12">
-                    <aside class="sidebar services-sidebar">
-                        
-                        <!-- Category Widget -->
-                        <div class="sidebar">
-                            <aside class="sidebar services-sidebar">
-                                <ul class="services-categories">
-                                    <li class="active"><a href="dripsdrop.html">All Services</a></li>
-                                    <li><a href="drips.html?filter=cold_flu">Feel Better</a></li>
-                                    <li><a href="drips.html?filter=happy_tummy">Happy Tummy</a></li>
-                                    <li><a href="drips.html?filter=iv_hydra">IV Hydration</a></li>
-                                    <li><a href="drips.html?filter=immunity_boost">Immunity Boost</a></li>
-                                    <li><a href="drips.html?filter=sports_reboot">Sports Reboot</a></li>
-                                    <li><a href="drips.html?filter=fatty_burn">Fatty Burn</a></li>
-                                    <li><a href="drips.html?filter=headache">Headache</a></li>
-                                    <li><a href="drips.html?filter=detox_drip">Detox Drip</a></li>
-                                    <li><a href="drips.html?filter=jet_lag">Jet Lag</a></li>
-                                    <li><a href="drips.html?filter=beauty">Beauty DripDrops</a></li>
-                                    <li><a href="drips.html?filter=hangover">Hangover Cure DripDrop</a></li>
-                                    <li><a href="drips.html?filter=energy">Energy DripDrop</a></li>
-                                </ul>
-                            </aside>
-                            
-                        </div>
-                        
-
-                      
-                    </aside>
-                </div>
+               
                 <div class="content-side col-lg-8 col-md-12 col-sm-12 order-2">
 
                         <div class="image-gallery">
                             <div class="drips" data-filter="cold_flu">
                                 <div class="gallery-item">
+
                                     <a href="drips.html?filter=cold_flu">
                                         <img src="images/Dripdrop/002 copy.png" alt="Cold & Flu Drip">
                                         <h3>Feel better DripDrop</h3>
+
                                     </a>
                                 </div>
                                 <div class="dripsdrop">
-                                    <h4>Feeling miserable and need a boost of your immune system?</h4>
+                                    <h4>Feeling miserable and need a boost for your immune system?</h4>
                                     <p>DripDrop Cold and flu IV therapy will get you back to being a functioning human and get your immune system pumping to get your illness in check! Experience at your choosing place IV Therapy today!</p>
                                     
                                     <h4>How it works:</h4>
@@ -554,11 +551,17 @@ h4 {
                                                 <h3>IV Hydration DripDrop</h3>
                                             </a>
                                         </div><br>
-                                      
+                                        <section class="drip-service">
+                                            <p><strong>The original vitamin drip</strong> that started it all, and still stays strong.</p>
+                                            <ul class="dot-list">
+                                              <li>✔ 1 Liter of IV Fluids</li>
+                                              <li>✔ Electrolytes</li>
+                                            </ul>
+                                          </section>
+                                          
 
                                         <div class="dripsdrop">
-                                            <p>The original vitamin drip that started it all, and still stays strong.<br><strong>1 Liter of IV Fluids | Electrolytes</strong></p>
-                                            <p></p>
+                                         
                                     
                                             <p>The IV Hydra Drip is a foundational IV drip service that provides all of the basic fluids and electrolytes your body needs to leave you feeling refreshed and revitalized. It has been used in the medical industry for decades as a treatment for dehydration.</p>
                                     
@@ -595,10 +598,18 @@ h4 {
                                                 <h3>Immunity Boost DripDrop</h3>
                                             </a>
                                         </div><br>
+                                        <section class="drip-service">
+                                            <p><strong>Support your immune system</strong> with a blended IV bag of nutrients and vitamins.</p>
+                                            <ul class="dot-list">
+                                              <li>✔ 1 Liter of IV Fluids</li>
+                                              <li>✔ High Dose Vitamin C</li>
+                                              <li>✔ High Dose Glutathione</li>
+                                              <li>✔ Zinc</li>
+                                            </ul>
+                                          </section>
+                                          
                                         <div class="dripsdrop">
-                                            <p>Support your immune system with a blended IV bag of nutrients and vitamins.<br><strong>
-                                                1 Liter of IV Fluids | High Dose Vitamin C | High Dose Glutathione | Zinc</strong></p>
-                                    
+                                            
                                             <p>Keeping your immunity in top condition is important for fighting off disease, reducing inflammation, slowing the aging process, and preventing the development of long term health conditions. Our specially formulated Immuno Drip IV infusion includes essential vitamins and antioxidants essential vitamins and antioxidants that contribute to a healthy, thriving immune system. Your body will thank you after taking this Immuno Drip therapy.</p>
                                     
                                             <h4>Our Immunity booster Dripdrop IV Drip blend is recommended for those experiencing:</h4>
@@ -629,9 +640,18 @@ h4 {
                                                 <h3>Sports Reboot DripDrop</h3>
                                             </a>
                                         </div><br>
+                                        <div class="drip-service">
+                                            <p><strong>Muscle recovery and hydration</strong>, all in one powerful formula to help you bounce back faster after physical activity.</p>
+                                            <ul class="dot-list">
+                                              <li>✔ 1 Liter of IV Fluids</li>
+                                              <li>✔ L-Carnitine</li>
+                                              <li>✔ L-Arginine</li>
+                                              <li>✔ Electrolytes</li>
+                                            </ul>
+                                        </div>
                                         <div class="dripsdrop">
-                                            <p>Muscle recovery and hydration, all in one.<br><strong>
-                                                1 Liter of IV Fluids | L-Carnitine | L-Arginine | Electrolytes</strong></p>
+                                           
+                                          
                                     
                                             <p>For athletes and those who want to recover faster from workouts, the Fit Dripdrop provides a concentrated intravenous dose of amino acids and vitamins that produce rapid results and support the rebuilding of muscles.Improve your performance, decrease soreness, and build strength faster with this specially formulated IV drip therapy.
                                                 The sports reboot Drip is recommended for clients who want to:</p>
@@ -670,8 +690,18 @@ h4 {
                                                 <h3>Fatty Burn DripDrop</h3>
                                             </a>
                                         </div><br>
+
+                                        <section class="drip-service">
+                                            <p><strong>Speed up your metabolism</strong> with a powerful blend of ingredients designed to support fat burning and energy production.</p>
+                                            <ul>
+                                              <li>✔ 1 Liter of IV Fluids</li>
+                                              <li>✔ High-Dose Carnitine</li>
+                                              <li>✔ Amino Acids</li>
+                                              <li>✔ Electrolytes</li>
+                                            </ul>
+                                          </section>
                                         <div class="dripsdrop">
-                                            <p>Speed up metabolism with this boost of ingredients.<br><strong>1 Liter of IV Fluids | High Dose Carnitine | Amino Acids | Electrolytes</strong></p>
+                                           
                                             <p>Whether you’re trying to lose weight for a specific occasion or just generally want to feel more trim and fit, the fatty burn Dripdrop IV infusion can help you reach your slimming goal. Our fat burner 
                                                drip essential blend of vitamins and minerals that will stimulate your metabolism, help your body burn extra calories, and increase energy.</p>
                                                <h4>The Slim Drip is recommended for individuals who want to:</h4>
@@ -704,9 +734,18 @@ h4 {
                                                 <h3>Headache DripDrop</h3>
                                             </a>
                                         </div><br>
+
+                                        <section class="drip-service">
+                                            <p><strong>Relax</strong> with the ingredients needed to curb the nauseating migraine.</p>
+                                            <ul class="dot-list">
+                                              <li>✔ 1 Liter of IV Fluids</li>
+                                              <li>✔ Magnesium</li>
+                                              <li>✔ Reglan</li>
+                                              <li>✔ Toradol</li>
+                                            </ul>
+                                          </section>
                                         <div class="dripsdrop">
-                                            <p>Relax with the ingredients needed to curb the nauseating migraine.<br>
-                                                <strong> Liter of IV Fluids | Magnesium | Reglan | Toradol</strong></p>
+                                          
                                             <p>A migraine can completely throw off your day or even your week. When you have a migraine or bad headache that won’t go away, our specially formulated
                                                  migraine IV drip can relieve discomfort as quickly as possible, targeting nausea and inflammation.</p>
                                             <p>In addition to relieving the pain and discomfort of migraines, our Migraine Drip intravenous infusion is beneficial for reducing:</p>
@@ -739,9 +778,16 @@ h4 {
                                                 <h3>Deluxe Detox DripDrop</h3>
                                             </a>
                                         </div><br>
+                                        <section class="drip-service">
+                                            <p><strong>Help your body</strong> flush toxins more efficiently.</p>
+                                            <ul class="dot-list">
+                                              <li>✔ 1 Liter of IV Fluids</li>
+                                              <li>✔ Electrolytes</li>
+                                              <li>✔ High Dose Glutathione</li>
+                                            </ul>
+                                          </section>
                                         <div class="dripsdrop">
-                                            <p>Help your body flush toxins more efficiently.<br>
-                                                <strong>1 Liter of IV Fluids | Electrolytes | High Dose Glutathione</strong></p>
+                                           
                                                 <p>If your system feels clogged or inflamed as a result of stress, diet, alcohol consumption, or illness, the Detox Drip is the perfect IV drip service to cleanse and start over fresh. This popular intravenous infusion
                                                      assists in removing toxins, relieving tension, and improving overall wellbeing.</p>
                                         </div>
@@ -760,7 +806,9 @@ h4 {
                                         <p>Feelings of fatigue, brain fog, and swelling can all be signs that your body is overwhelmed with toxins. The Detox Drip focuses on the liver –
                                             the powerhouse of your detoxification system. This drip will assist in clearing the toxins and keeping your liver healthy and operating at its full potential.
                                             Boost your results by combining the detoxification IV drip with the our immunity Booster, or Vitamin C Booster.</p>
-                                            <h4>Benefits of the Detox IV Drip Infusions:</h4>
+                                            <div class="dripsdrop">
+                                                <h4>Benefits of the Detox IV Drip Infusions:</h4>
+                                            </div>
                                             <p>Electrolytes: Necessary for proper cellular and muscular functioning. Electrolytes also help regulate blood pressure and hydration.</p>
                                             <p>High Dose Glutathione: Glutathione is a powerful antioxidant that can help eliminate free radicals in the body, boosting the immune system 
                                                and helping prevent the development of certain health conditions.</p>
@@ -813,8 +861,16 @@ h4 {
                                                 <h3>Beauty Boost DripDrop</h3>
                                             </a>
                                         </div><br>
-                                        <h3>Glow from the inside, out.</h3>
-                                        <p><strong>1 Liter of IV Fluids | High Dose Vitamin C | High Dose Glutathione | Electrolytes</strong></p>
+                                        <section class="drip-service">
+                                            <p><strong>Glow from the inside, out.</strong></p>
+                                            <ul class="dot-list">
+                                              <li>✔ 1 Liter of IV Fluids</li>
+                                              <li>✔ High Dose Vitamin C</li>
+                                              <li>✔ High Dose Glutathione</li>
+                                              <li>✔ Electrolytes</li>
+                                            </ul>
+                                          </section>
+                                      
                                         <p>As we age, our skin becomes less able to retain moisture and important nutrients. The Beauty DripDrops IV
                                              infusion helps combat the effects of aging, sun exposure, and stress with natural vitamins that tightens and brightens from the inside out.</p>
                                              
@@ -828,12 +884,13 @@ h4 {
                                                 <li>Fine lines and wrinkles</li>
                                                 <li>Low energy</li>
                                             </ul>
-                                          
                                         </div>
                                         <p>Whether you are preparing for a special occasion or just want your skin, hair and nails to feel refreshed and revitalized, the Beauty DripDrops
                                             IV infusion is the perfect solution. This specially formulated blend improves youthful appearance by generating a healthy glow and improved skin complexion.
                                             It can be combined with the Wellness and immunity Booster or Zinc Booster for added benefits.</p>
-                                        <h4>Benefits of the BeautyDripDrops IV Infusion:</h4>
+                                            <div class="dripsdrop">
+                                                <h4>Benefits of the BeautyDripDrops IV Infusion:</h4>
+                                            </div>
                                         <p><strong>Vitamin C:</strong>Vitamin C has been shown to help boost collagen production, improve skin tone and reduce signs of aging.</p>
                                         <p><strong>Electrolytes:</strong> Necessary for proper cellular and muscular functioning. Electrolytes also help regulate blood pressure, hydrate the skin, and maintain energy.</p>
                                         <p><strong>High Dose Glutathione:</strong> Glutathione is a powerful antioxidant that can help eliminate free radicals in the body, which can damage the skin. It also boosts the immune system and energy levels.</p>
@@ -847,31 +904,43 @@ h4 {
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="drips" data-filter="hangover">
-                                        <div class="gallery-item">
-                                            <a href="drips.html?filter=hangover">
-                                                <img src="images/Dripdrop/011 copy.png" alt="Hangover Drip">
+                                    <div class="drips" data-filter="hangover" style="padding: 30px; background-color: #f8f9fa; border-radius: 10px; font-family: Arial, sans-serif;">
+                                        <div class="gallery-item" style="text-align: center;">
+                                            <a href="drips.html?filter=hangover" style="text-decoration: none; color: #000;">
+                                                <img src="images/Dripdrop/011 copy.png" alt="Hangover Drip" style="max-width: 100%; height: auto; border-radius: 8px;">
                                                 <h3>Hangover Relief DripDrop</h3>
                                             </a>
-                                        </div><br>
-
-                                        <p>DripDrop IV Therapy is here to provide quick, efficient hangover relief whenever and wherever you need it.
-                                            Our hangover IV is designed to combat the most stubborn symptoms through hydration and a combination of vitamins and electrolytes.</p>
-                                        <p>All you have to do is call us (or book online), then sit back and relax — we’ll come to you or you come to us and help you get on with your day.</p>
-
-                                        <p>Our hangover cure dripdrop is packed with a combination of saline, vitamins, headache relief and anti-nausea medications.</p>
-                                        <h4>How it Works:</h4>
-                                        <p>
-                                            Help with symptoms like intense headaches, dehydration, fatigue, nausea, dizziness, vomiting, and more. We may be the closest thing to healing a hangover.</p>
-                                            <div class="w-2">
-                                                <!-- Appointment Btn -->
-                                                <div class="appointment-btn">
-                                                    <button id="openForm" class="system-only">
-                                                        <i class="fa fa-calendar-alt"></i> BOOK HERE
-                                                    </button>
-                                                </div>
+                                        </div>
+                                    
+                                        <div >
+                                            <p><strong>DripDrop IV Therapy</strong> provides quick, efficient hangover relief — whenever and wherever you need it. Our specialized IV combats stubborn symptoms through advanced hydration, essential vitamins, and electrolytes.</p>
+                                    
+                                            <p>Just call us or book online. Then sit back and relax — whether you come to us or we come to you, we’ll get you back on track fast.</p>
+                                    
+                                            <p>This powerful hangover cure includes a blend of saline, essential vitamins, headache relief, and anti-nausea medications.</p>
+                                            <div class="dripsdrop">
+                                                <h4>Benefits of Hangover Relief DripDrop</h4>
                                             </div>
+                                            <div class="benefits-list">
+                                                <ul>
+                                                    <li>Relieves intense headaches</li>
+                                                    <li>Rehydrates your body</li>
+                                                    <li>Combats fatigue and dizziness</li>
+                                                    <li>Reduces nausea and vomiting</li>
+                                                    <li>Restores energy and clarity</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="w-2" style="">
+                                            <div class="appointment-btn">
+                                                <button id="openForm" class="system-only">
+                                                    <i class="fa fa-calendar-alt"></i> BOOK HERE
+                                                </button>
+                                            </div>
+                                        </div>
                                     </div>
+                                    
                              </div>
 
 
@@ -915,9 +984,20 @@ h4 {
                                             Getting enough sleep, eating well, staying hydrated, and reducing your stress levels can help. </p>
                                         <p>IV vitamins can also boost your energy levels by replenishing low levels of essential vitamins.</p>
 
-                                        <h4>How it works:</h4>
-                                        <p>IV energy DripDrop helps recharge your cells and improve mental clarity by supplying the body with fluids, vitamins and 
-                                        other nutrients involved in energy production.</p>
+                                        <div class="dripsdrop">
+                                            <h4>Benefits of Energy DripDrop:</h4>
+                                        </div>
+                                        <div class="benefits-list">
+                                        
+                                            <ul style="margin-left: 20px; list-style: disc;">
+                                                <li>Boosts energy levels naturally</li>
+                                                <li>Improves focus and mental clarity</li>
+                                                <li>Hydrates and revitalizes cells</li>
+                                                <li>Reduces fatigue and burnout</li>
+                                                <li>Supports metabolism and stamina</li>
+                                            </ul>
+                                        </div>
+                                        
                                             <div class="dripsdrop">
                                                 <h4>When your body’s energy levels get a boost, everything else falls into place. You are better able to:</h4>
                                             </div>
@@ -949,6 +1029,35 @@ h4 {
 
                         </div>
                         
+                        <div class="sidebar-side col-lg-4 col-md-12 col-sm-12">
+                            <aside class="sidebar services-sidebar">
+                                
+                                <!-- Category Widget -->
+                                <div class="sidebar">
+                                    <aside class="sidebar services-sidebar">
+                                        <ul class="services-categories">
+                                            <li class="active"><a href="dripsdrop.html">All Services</a></li>
+                                            <li><a href="drips.html?filter=cold_flu">Feel Better</a></li>
+                                            <li><a href="drips.html?filter=happy_tummy">Happy Tummy</a></li>
+                                            <li><a href="drips.html?filter=iv_hydra">IV Hydration</a></li>
+                                            <li><a href="drips.html?filter=immunity_boost">Immunity Boost</a></li>
+                                            <li><a href="drips.html?filter=sports_reboot">Sports Reboot</a></li>
+                                            <li><a href="drips.html?filter=fatty_burn">Fatty Burn</a></li>
+                                            <li><a href="drips.html?filter=headache">Headache</a></li>
+                                            <li><a href="drips.html?filter=detox_drip">Detox Drip</a></li>
+                                            <li><a href="drips.html?filter=jet_lag">Jet Lag</a></li>
+                                            <li><a href="drips.html?filter=beauty">Beauty DripDrops</a></li>
+                                            <li><a href="drips.html?filter=hangover">Hangover Cure DripDrop</a></li>
+                                            <li><a href="drips.html?filter=energy">Energy DripDrop</a></li>
+                                        </ul>
+                                    </aside>
+                                    
+                                </div>
+                                
+        
+                              
+                            </aside>
+                        </div> 
                 </div>
                 
                 
@@ -1003,10 +1112,9 @@ h4 {
                                 <h2>Get In Touch</h2>
                                 <ul class="contact-list">
                                     <li class="footer-address">
-                                        <span class="icon fas fa-map-marker-alt"></span>
                                         <div class="two-address">
-                                            <div >✔ 10 Nkanchibiya Road, Lusaka, Zambia.</div>
-                                            <div >✔ Makeni, Near Makeni Nursing College, Along Makeni Road, Lusaka, Zambia.</div>
+                                            <div ><i class="icon fas fa-map-marker-alt"></i>10 Nkanchibiya Road, Lusaka, Zambia.</div>
+                                            <div ><i class="icon fas fa-map-marker-alt"></i> Makeni, Near Makeni Nursing College, Along Makeni Road, Lusaka, Zambia.</div>
                                         </div>
                                     </li>
                                     

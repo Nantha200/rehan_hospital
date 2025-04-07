@@ -46,6 +46,23 @@
 </script>
   
 <style>
+.map-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%;
+}
+
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
 
 
 .container {
@@ -193,10 +210,9 @@ textarea.input {
 
 .input-container span {
   position: absolute;
-  top: 0;
-  left: 25px;
+  top: 20px;
   transform: translateY(-50%);
-  font-size: 0.8rem;
+  font-size: 2rem;
   padding: 0 0.4rem;
   color: transparent;
   pointer-events: none;
@@ -582,9 +598,11 @@ textarea.input {
     
               <div class="info">
                 <div class="information">
-                  <i class="fas fa-map-marker-alt"></i> &nbsp &nbsp
-    
-                  <p>10 Nkanchibiya Road, Lusaka, Zambia</p>
+                 &nbsp &nbsp                  
+                  <div class="two-address">
+                    <div > <i class="fas fa-map-marker-alt"></i>  10 Nkanchibiya Road, Lusaka, Zambia.</div>
+                    <div > <i class="fas fa-map-marker-alt"></i>  Makeni, Near Makeni Nursing College, Along Makeni Road, Lusaka, Zambia.</div>
+                  </div>
                 </div>
                 <div class="information">
                   <i class="fas fa-envelope"></i> &nbsp &nbsp
@@ -599,18 +617,14 @@ textarea.input {
               <div class="social-media">
                 <p>Connect with us :</p>
                 <div class="social-icons">
-                  <a href="#">
+                  <a href="https://www.facebook.com/profile.php?id=61561167188441">
                     <i class="fab fa-facebook-f"></i>
                   </a>
-                  <a href="#">
-                    <i class="fab fa-twitter"></i>
-                  </a>
-                  <a href="#">
+                
+                  <a href="https://www.instagram.com/rehan_hospital/?hl=en">
                     <i class="fab fa-instagram"></i>
                   </a>
-                  <a href="#">
-                    <i class="fab fa-linkedin-in"></i>
-                  </a>
+                
                 </div>
               </div>
             </div>
@@ -618,37 +632,41 @@ textarea.input {
             <div class="contact-form">
               <span class="circle one"></span>
               <span class="circle two"></span>
-    
               <form action="">
                 <h3 class="title">Contact us</h3>
+              
                 <div class="input-container">
-                    <label for="name">Full Name:</label>
-                    <input type="text" id="name" class="input" name="name" required>
+                  <label for="name">Full Name: <span style="color: red;">*</span></label>
+                  <input type="text" id="name" class="input" name="name" required>
                 </div>
-            
+              
                 <div class="input-container">
-                    <label for="phone">Mobile Number:</label>
-                    <input type="tel" id="phone" class="input" name="phone" pattern="[0-9]{10,15}" required>
+                  <label for="phone">Mobile Number: <span style="color: red;">*</span></label>
+                  <input type="tel" id="phone" class="input" name="phone" pattern="[0-9]{10,15}" required>
                 </div>
-            
+              
                 <div class="form-row">
-                    <div class="form-group">
-                        <label for="date">Select Date:</label>
-                        <input type="date" id="date" class="input" name="date" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="time">Select Time:</label>
-                        <input type="time" id="time" name="time" class="input" required>
-                    </div>
+                  <div class="form-group">
+                    <label for="date" style="color:#ffffff">Select Date: <span style="color: red;">*</span></label>
+                    <input type="date" id="date" class="input" name="date" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="time" style="color:#ffffff">Select Time: <span style="color: red;">*</span></label>
+                    <input type="time" id="time" name="time" class="input" required>
+                  </div>
                 </div>
-            
+              
                 <div class="input-container textarea">
-                    <label for="treatment">Message:</label>
-                    <textarea name="treatment" id="treatment" class="input" required></textarea>
+                  <label for="treatment">Message: <span style="color: red;">*</span></label>
+                  <textarea name="treatment" id="treatment" class="input" required></textarea>
                 </div>
-            
+              
                 <button type="button" class="btn" onclick="sendToWhatsapp()">Send</button>
-            </form>
+              </form>
+              
+            
+              
+              
             
            
             
@@ -661,8 +679,15 @@ textarea.input {
 
     <!-- Map Section -->
 
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2218.6001689298378!2d28.30517171390877!3d-15.407971154912529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19408b0039621001%3A0xa3e4f34ed7448f83!2sRehan%20hospital%20zm!5e1!3m2!1sen!2sin!4v1739877577952!5m2!1sen!2sin" width="1800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        </div>
-    <!-- End Map Section -->
+    <div class="map-container">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2218.6001689298378!2d28.30517171390877!3d-15.407971154912529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19408b0039621001%3A0xa3e4f34ed7448f83!2sRehan%20hospital%20zm!5e1!3m2!1sen!2sin!4v1739877577952!5m2!1sen!2sin" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+        <!-- End Map Section -->
 
 
            <!-- Main Footer -->
@@ -708,10 +733,9 @@ textarea.input {
                                 <h2>Get In Touch</h2>
                                 <ul class="contact-list">
                                   <li class="footer-address">
-                                    <span class="icon fas fa-map-marker-alt"></span>
                                     <div class="two-address">
-                                        <div >✔ 10 Nkanchibiya Road, Lusaka, Zambia.</div>
-                                        <div >✔ Makeni, Near Makeni Nursing College, Along Makeni Road, Lusaka, Zambia.</div>
+                                        <div ><i class="icon fas fa-map-marker-alt"></i>10 Nkanchibiya Road, Lusaka, Zambia.</div>
+                                        <div ><i class="icon fas fa-map-marker-alt"></i> Makeni, Near Makeni Nursing College, Along Makeni Road, Lusaka, Zambia.</div>
                                     </div>
                                   </li>
                                     
@@ -800,6 +824,27 @@ inputs.forEach((input) => {
   input.addEventListener("blur", blurFunc);
 });
 
+</script>
+
+<script>
+  function sendToWhatsapp() {
+    const name = document.getElementById("name").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+    const date = document.getElementById("date").value;
+    const time = document.getElementById("time").value;
+    const message = document.getElementById("treatment").value.trim();
+
+    if (!name || !phone || !date || !time || !message) {
+      alert("Please fill all fields before sending.");
+      return;
+    }
+
+    const whatsappNumber = "260770097375";
+    const text = `New Appointment Request:\n\n👤 Name: ${name}\n📞 Mobile: ${phone}\n📅 Date: ${date}\n⏰ Time: ${time}\n📝 Message: ${message}`;
+
+    const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
+    window.open(url, "_blank");
+  }
 </script>
 </body>
 
